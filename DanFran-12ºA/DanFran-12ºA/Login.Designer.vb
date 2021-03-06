@@ -33,25 +33,31 @@ Partial Class Login
         '
         'Blogin
         '
-        Me.Blogin.Location = New System.Drawing.Point(9, 181)
+        Me.Blogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Blogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Blogin.Font = New System.Drawing.Font("Cooper Black", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Blogin.Location = New System.Drawing.Point(15, 226)
         Me.Blogin.Name = "Blogin"
         Me.Blogin.Size = New System.Drawing.Size(75, 23)
         Me.Blogin.TabIndex = 0
         Me.Blogin.Text = "Login"
-        Me.Blogin.UseVisualStyleBackColor = True
+        Me.Blogin.UseVisualStyleBackColor = False
         '
         'Bclose
         '
-        Me.Bclose.Location = New System.Drawing.Point(121, 181)
+        Me.Bclose.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Bclose.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Bclose.Font = New System.Drawing.Font("Cooper Black", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bclose.Location = New System.Drawing.Point(124, 226)
         Me.Bclose.Name = "Bclose"
         Me.Bclose.Size = New System.Drawing.Size(75, 23)
         Me.Bclose.TabIndex = 1
-        Me.Bclose.Text = "CLose"
-        Me.Bclose.UseVisualStyleBackColor = True
+        Me.Bclose.Text = "Close"
+        Me.Bclose.UseVisualStyleBackColor = False
         '
         'TextBoxUser
         '
-        Me.TextBoxUser.Location = New System.Drawing.Point(12, 43)
+        Me.TextBoxUser.Location = New System.Drawing.Point(12, 97)
         Me.TextBoxUser.Name = "TextBoxUser"
         Me.TextBoxUser.Size = New System.Drawing.Size(184, 20)
         Me.TextBoxUser.TabIndex = 2
@@ -59,26 +65,28 @@ Partial Class Login
         'Lbluser
         '
         Me.Lbluser.AutoSize = True
+        Me.Lbluser.BackColor = System.Drawing.Color.Transparent
         Me.Lbluser.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbluser.Location = New System.Drawing.Point(12, 22)
+        Me.Lbluser.Location = New System.Drawing.Point(12, 67)
         Me.Lbluser.Name = "Lbluser"
-        Me.Lbluser.Size = New System.Drawing.Size(72, 18)
+        Me.Lbluser.Size = New System.Drawing.Size(80, 18)
         Me.Lbluser.TabIndex = 3
-        Me.Lbluser.Text = "Username"
+        Me.Lbluser.Text = "Username:"
         '
         'Lblpass
         '
         Me.Lblpass.AutoSize = True
+        Me.Lblpass.BackColor = System.Drawing.Color.Transparent
         Me.Lblpass.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lblpass.Location = New System.Drawing.Point(12, 97)
+        Me.Lblpass.Location = New System.Drawing.Point(12, 131)
         Me.Lblpass.Name = "Lblpass"
-        Me.Lblpass.Size = New System.Drawing.Size(72, 18)
+        Me.Lblpass.Size = New System.Drawing.Size(80, 18)
         Me.Lblpass.TabIndex = 4
-        Me.Lblpass.Text = "Password"
+        Me.Lblpass.Text = "Password:"
         '
         'TextBoxPass
         '
-        Me.TextBoxPass.Location = New System.Drawing.Point(15, 118)
+        Me.TextBoxPass.Location = New System.Drawing.Point(15, 162)
         Me.TextBoxPass.Name = "TextBoxPass"
         Me.TextBoxPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxPass.Size = New System.Drawing.Size(184, 20)
@@ -88,7 +96,10 @@ Partial Class Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(417, 216)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.windows
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(402, 261)
         Me.Controls.Add(Me.TextBoxPass)
         Me.Controls.Add(Me.Lblpass)
         Me.Controls.Add(Me.Lbluser)

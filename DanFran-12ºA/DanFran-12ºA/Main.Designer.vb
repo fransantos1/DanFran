@@ -30,7 +30,7 @@ Partial Class Main
         '
         'Label1
         '
-        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Label1.BackColor = System.Drawing.Color.RosyBrown
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Location = New System.Drawing.Point(-15, 212)
@@ -40,33 +40,39 @@ Partial Class Main
         '
         'BJogar
         '
+        Me.BJogar.BackColor = System.Drawing.Color.MistyRose
+        Me.BJogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BJogar.Font = New System.Drawing.Font("Gadugi", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BJogar.Location = New System.Drawing.Point(434, 230)
         Me.BJogar.Name = "BJogar"
         Me.BJogar.Size = New System.Drawing.Size(151, 72)
         Me.BJogar.TabIndex = 1
         Me.BJogar.Text = "Jogar"
-        Me.BJogar.UseVisualStyleBackColor = True
+        Me.BJogar.UseVisualStyleBackColor = False
         '
         'Bregras
         '
+        Me.Bregras.BackColor = System.Drawing.Color.MistyRose
+        Me.Bregras.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Bregras.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Bregras.Location = New System.Drawing.Point(319, 259)
         Me.Bregras.Name = "Bregras"
         Me.Bregras.Size = New System.Drawing.Size(109, 43)
         Me.Bregras.TabIndex = 2
         Me.Bregras.Text = "Regras"
-        Me.Bregras.UseVisualStyleBackColor = True
+        Me.Bregras.UseVisualStyleBackColor = False
         '
         'BSair
         '
+        Me.BSair.BackColor = System.Drawing.Color.MistyRose
+        Me.BSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BSair.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BSair.Location = New System.Drawing.Point(12, 265)
         Me.BSair.Name = "BSair"
         Me.BSair.Size = New System.Drawing.Size(109, 37)
         Me.BSair.TabIndex = 3
         Me.BSair.Text = "Sair"
-        Me.BSair.UseVisualStyleBackColor = True
+        Me.BSair.UseVisualStyleBackColor = False
         '
         'Main
         '
