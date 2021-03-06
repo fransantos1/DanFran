@@ -1,2 +1,13 @@
 D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\bin\Debug\DanFran-12ºA.exe.config
 C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\bin\Debug\DanFran-12ºA.exe.config
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\bin\Debug\DanFran-12ºA.exe
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\bin\Debug\DanFran-12ºA.pdb
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\bin\Debug\DanFran-12ºA.xml
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.vbprojResolveAssemblyReference.cache
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Login.resources
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Resources.resources
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.vbproj.GenerateResource.Cache
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.exe
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.xml
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.pdb
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Main.resources
