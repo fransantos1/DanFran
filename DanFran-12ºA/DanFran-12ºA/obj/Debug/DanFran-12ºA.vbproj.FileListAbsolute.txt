@@ -14,3 +14,6 @@ D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanF
 C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.exe
 C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.xml
 C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.pdb
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Game.resources
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Mundo2.resources
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Regras.resources

@@ -1,7 +1,7 @@
 ﻿Public Class Main
     Private Sub BJogar_Click(sender As Object, e As EventArgs) Handles BJogar.Click
         Me.Hide()
-        Game.Show()
+        Mundo2.Show()
     End Sub
 
     Private Sub BSair_Click(sender As Object, e As EventArgs) Handles BSair.Click
