@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Puzzle.Designer.vb">
+      <DependentUpon>Puzzle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Game.Designer.vb">
       <DependentUpon>Game.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Puzzle.resx">
+      <DependentUpon>Puzzle.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.vb</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +171,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mapadef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzleA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzleB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzleC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzleD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzleE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tubarao.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

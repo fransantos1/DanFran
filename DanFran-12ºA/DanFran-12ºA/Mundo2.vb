@@ -29,4 +29,8 @@
 
         End If
     End Sub
+
+    Private Sub lblescola_Click(sender As Object, e As EventArgs) Handles lblescola.Click
+
+    End Sub
 End Class
