@@ -93,6 +93,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property pokman() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pokman", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property puzzleA() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("puzzleA", resourceCulture)
@@ -136,6 +146,16 @@ Namespace My.Resources
         Friend ReadOnly Property puzzleE() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("puzzleE", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property triviabg() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("triviabg", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

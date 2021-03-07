@@ -22,7 +22,6 @@ Partial Class Pok_Man
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -43,16 +42,9 @@ Partial Class Pok_Man
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.BackColor = System.Drawing.Color.Blue
-        Me.Label1.Location = New System.Drawing.Point(3, 132)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 73)
-        Me.Label1.TabIndex = 0
         '
         'Label2
         '
@@ -105,9 +97,9 @@ Partial Class Pok_Man
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.Color.Blue
-        Me.Label8.Location = New System.Drawing.Point(3, 247)
+        Me.Label8.Location = New System.Drawing.Point(3, 132)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(21, 246)
+        Me.Label8.Size = New System.Drawing.Size(21, 361)
         Me.Label8.TabIndex = 7
         '
         'Label9
@@ -131,7 +123,7 @@ Partial Class Pok_Man
         Me.Label11.BackColor = System.Drawing.Color.Blue
         Me.Label11.Location = New System.Drawing.Point(12, 471)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(302, 22)
+        Me.Label11.Size = New System.Drawing.Size(453, 22)
         Me.Label11.TabIndex = 10
         '
         'Label12
@@ -214,13 +206,15 @@ Partial Class Pok_Man
         Me.Label21.Size = New System.Drawing.Size(135, 22)
         Me.Label21.TabIndex = 20
         '
-        'Label22
+        'PictureBox1
         '
-        Me.Label22.BackColor = System.Drawing.Color.Blue
-        Me.Label22.Location = New System.Drawing.Point(375, 471)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(88, 22)
-        Me.Label22.TabIndex = 21
+        Me.PictureBox1.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.pokman
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(459, 127)
+        Me.PictureBox1.TabIndex = 22
+        Me.PictureBox1.TabStop = False
         '
         'Pok_Man
         '
@@ -229,7 +223,7 @@ Partial Class Pok_Man
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(468, 502)
-        Me.Controls.Add(Me.Label22)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label19)
@@ -250,14 +244,12 @@ Partial Class Pok_Man
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Name = "Pok_Man"
         Me.Text = "Pok_Man"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -278,5 +270,5 @@ Partial Class Pok_Man
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents Label22 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

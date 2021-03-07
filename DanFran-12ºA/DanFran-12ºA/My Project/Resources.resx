@@ -127,6 +127,9 @@
   <data name="padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\padlock.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pokman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pokman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="puzzleA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\puzzleA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +144,9 @@
   </data>
   <data name="puzzleE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\puzzleE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="triviabg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\triviabg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tubarao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tubarao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
