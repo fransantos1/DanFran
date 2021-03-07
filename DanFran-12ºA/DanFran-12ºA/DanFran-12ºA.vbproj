@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pok-Man.Designer.vb">
+      <DependentUpon>Pok-Man.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pok-Man.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Puzzle.Designer.vb">
       <DependentUpon>Puzzle.vb</DependentUpon>
     </Compile>
@@ -124,8 +130,17 @@
     <Compile Include="Regras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Trivia.Designer.vb">
+      <DependentUpon>Trivia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trivia.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Pok-Man.resx">
+      <DependentUpon>Pok-Man.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Puzzle.resx">
       <DependentUpon>Puzzle.vb</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Regras.resx">
       <DependentUpon>Regras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trivia.resx">
+      <DependentUpon>Trivia.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tubarao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maze.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

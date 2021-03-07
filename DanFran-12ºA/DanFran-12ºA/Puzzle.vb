@@ -6,7 +6,7 @@
             Mundo2.Show()
 
         Else
-            MsgBox("Como é q erraste?", MsgBoxStyle.Information, "WTF")
+            MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
         End If
     End Sub
 

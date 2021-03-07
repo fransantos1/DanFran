@@ -70,6 +70,8 @@
 
 
         If Collisions(character, lblbiblio) = True Then
+            Me.Hide()
+            Trivia.Show()
 
         End If
 
@@ -88,6 +90,9 @@
 
         End If
         If Collisions(character, lblrcade) = True Then
+            Me.Hide()
+            Pok_Man.Show()
+
 
         End If
     End Sub
@@ -98,5 +103,7 @@
 
     End Sub
 
+    Private Sub lblescola_Click(sender As Object, e As EventArgs) Handles lblescola.Click
 
+    End Sub
 End Class
