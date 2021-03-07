@@ -17,3 +17,4 @@ C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\D
 D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Game.resources
 D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Mundo2.resources
 D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Regras.resources
+D:\ai\visual basic\jogo final\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Puzzle.resources

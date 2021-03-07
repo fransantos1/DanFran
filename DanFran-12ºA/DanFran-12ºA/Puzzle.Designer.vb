@@ -30,6 +30,7 @@ Partial Class Puzzle
         Me.RBE = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.verificador = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -120,12 +121,22 @@ Partial Class Puzzle
         Me.Button1.Text = "Confirmar"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'verificador
+        '
+        Me.verificador.AutoSize = True
+        Me.verificador.Location = New System.Drawing.Point(668, 11)
+        Me.verificador.Name = "verificador"
+        Me.verificador.Size = New System.Drawing.Size(0, 13)
+        Me.verificador.TabIndex = 8
+        Me.verificador.Visible = False
+        '
         'Puzzle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Turquoise
         Me.ClientSize = New System.Drawing.Size(726, 350)
+        Me.Controls.Add(Me.verificador)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RBE)
@@ -150,4 +161,5 @@ Partial Class Puzzle
     Friend WithEvents RBE As RadioButton
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents verificador As Label
 End Class

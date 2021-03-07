@@ -20,4 +20,5 @@
     Private Sub Bclose_Click(sender As Object, e As EventArgs) Handles Bclose.Click
         End
     End Sub
+
 End Class

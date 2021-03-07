@@ -32,6 +32,36 @@ DanFran-12ºA
   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
 </summary>
 </member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.puzzleA">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.puzzleB">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.puzzleC">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.puzzleD">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.puzzleE">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.tubarao">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DanFran_12ºA.My.Resources.Resources.windows">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

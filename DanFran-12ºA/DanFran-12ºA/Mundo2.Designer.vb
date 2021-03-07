@@ -29,33 +29,37 @@ Partial Class Mundo2
         Me.lblescola = New System.Windows.Forms.Label()
         Me.Ticks = New System.Windows.Forms.Timer(Me.components)
         Me.character = New System.Windows.Forms.PictureBox()
+        Me.Borderleft = New System.Windows.Forms.PictureBox()
+        Me.borderup = New System.Windows.Forms.PictureBox()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Borderleft, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.borderup, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbllab
         '
-        Me.lbllab.Location = New System.Drawing.Point(208, 275)
+        Me.lbllab.Location = New System.Drawing.Point(207, 262)
         Me.lbllab.Name = "lbllab"
         Me.lbllab.Size = New System.Drawing.Size(47, 23)
         Me.lbllab.TabIndex = 0
         '
         'lblrcade
         '
-        Me.lblrcade.Location = New System.Drawing.Point(388, 275)
+        Me.lblrcade.Location = New System.Drawing.Point(383, 262)
         Me.lblrcade.Name = "lblrcade"
         Me.lblrcade.Size = New System.Drawing.Size(47, 23)
         Me.lblrcade.TabIndex = 1
         '
         'lblbiblio
         '
-        Me.lblbiblio.Location = New System.Drawing.Point(704, 262)
+        Me.lblbiblio.Location = New System.Drawing.Point(703, 250)
         Me.lblbiblio.Name = "lblbiblio"
         Me.lblbiblio.Size = New System.Drawing.Size(47, 23)
         Me.lblbiblio.TabIndex = 2
         '
         'lblescola
         '
-        Me.lblescola.Location = New System.Drawing.Point(950, 262)
+        Me.lblescola.Location = New System.Drawing.Point(954, 250)
         Me.lblescola.Name = "lblescola"
         Me.lblescola.Size = New System.Drawing.Size(47, 23)
         Me.lblescola.TabIndex = 3
@@ -66,11 +70,29 @@ Partial Class Mundo2
         '
         'character
         '
-        Me.character.Location = New System.Drawing.Point(505, 294)
+        Me.character.Location = New System.Drawing.Point(422, 316)
         Me.character.Name = "character"
-        Me.character.Size = New System.Drawing.Size(100, 50)
+        Me.character.Size = New System.Drawing.Size(54, 50)
         Me.character.TabIndex = 4
         Me.character.TabStop = False
+        '
+        'Borderleft
+        '
+        Me.Borderleft.Location = New System.Drawing.Point(43, 399)
+        Me.Borderleft.Name = "Borderleft"
+        Me.Borderleft.Size = New System.Drawing.Size(49, 41)
+        Me.Borderleft.TabIndex = 5
+        Me.Borderleft.TabStop = False
+        Me.Borderleft.Visible = False
+        '
+        'borderup
+        '
+        Me.borderup.Location = New System.Drawing.Point(1071, 218)
+        Me.borderup.Name = "borderup"
+        Me.borderup.Size = New System.Drawing.Size(42, 41)
+        Me.borderup.TabIndex = 6
+        Me.borderup.TabStop = False
+        Me.borderup.Visible = False
         '
         'Mundo2
         '
@@ -78,7 +100,9 @@ Partial Class Mundo2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.mapadef
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1143, 453)
+        Me.ClientSize = New System.Drawing.Size(1143, 434)
+        Me.Controls.Add(Me.borderup)
+        Me.Controls.Add(Me.Borderleft)
         Me.Controls.Add(Me.character)
         Me.Controls.Add(Me.lblescola)
         Me.Controls.Add(Me.lblbiblio)
@@ -87,6 +111,8 @@ Partial Class Mundo2
         Me.Name = "Mundo2"
         Me.Text = "Mundo2"
         CType(Me.character, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Borderleft, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.borderup, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -97,4 +123,6 @@ Partial Class Mundo2
     Friend WithEvents lblescola As Label
     Friend WithEvents Ticks As Timer
     Friend WithEvents character As PictureBox
+    Friend WithEvents Borderleft As PictureBox
+    Friend WithEvents borderup As PictureBox
 End Class
