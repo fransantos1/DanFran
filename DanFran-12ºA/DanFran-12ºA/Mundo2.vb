@@ -9,6 +9,7 @@
         lblrcade.BackColor = Color.Transparent
         lblescola.BackColor = Color.Transparent
         lblbiblio.BackColor = Color.Transparent
+        character.BackColor = Color.Transparent
         Ticks.Start()
         puzzle2 = True
     End Sub
@@ -52,15 +53,17 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Ticks.Tick
         'movimento
         If cima = True Then
-            If character.Top > borderup.Top + borderup.Height Then
+            If character.Top > Bordertopleft.Top + Bordertopleft.Height Then
                 character.Top = character.Top - 5
             End If
         End If
         If baixo = True Then
-            character.Top = character.Top + 5
+            If character.Top + character.Height < borderdownright.Top Then
+                character.Top = character.Top + 5
+            End If
         End If
         If esquerda = True Then
-            If character.Left > Borderleft.Left + Borderleft.Width Then
+            If character.Left > Bordertopleft.Left + Bordertopleft.Width Then
                 character.Left = character.Left - 5
             End If
         End If

@@ -22,6 +22,11 @@ DanFran-12ºA
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.Character">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DanFran_12ºA.My.Resources.Resources.mapadef">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

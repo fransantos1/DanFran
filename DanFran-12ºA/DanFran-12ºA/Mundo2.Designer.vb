@@ -30,8 +30,8 @@ Partial Class Mundo2
         Me.lblescola = New System.Windows.Forms.Label()
         Me.Ticks = New System.Windows.Forms.Timer(Me.components)
         Me.character = New System.Windows.Forms.PictureBox()
-        Me.Borderleft = New System.Windows.Forms.PictureBox()
-        Me.borderup = New System.Windows.Forms.PictureBox()
+        Me.Bordertopleft = New System.Windows.Forms.PictureBox()
+        Me.borderdownright = New System.Windows.Forms.PictureBox()
         Me.Menustrip = New System.Windows.Forms.MenuStrip()
         Me.OpçõesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LabToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,8 +41,8 @@ Partial Class Mundo2
         Me.AutoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Borderleft, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.borderup, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Bordertopleft, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.borderdownright, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menustrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,9 +69,9 @@ Partial Class Mundo2
         '
         'lblescola
         '
-        Me.lblescola.Location = New System.Drawing.Point(927, 236)
+        Me.lblescola.Location = New System.Drawing.Point(938, 236)
         Me.lblescola.Name = "lblescola"
-        Me.lblescola.Size = New System.Drawing.Size(47, 23)
+        Me.lblescola.Size = New System.Drawing.Size(36, 23)
         Me.lblescola.TabIndex = 3
         '
         'Ticks
@@ -80,29 +80,31 @@ Partial Class Mundo2
         '
         'character
         '
-        Me.character.Location = New System.Drawing.Point(482, 302)
+        Me.character.Image = Global.DanFran_12ºA.My.Resources.Resources.Character
+        Me.character.Location = New System.Drawing.Point(550, 268)
         Me.character.Name = "character"
-        Me.character.Size = New System.Drawing.Size(54, 50)
+        Me.character.Size = New System.Drawing.Size(26, 50)
+        Me.character.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.character.TabIndex = 4
         Me.character.TabStop = False
         '
-        'Borderleft
+        'Bordertopleft
         '
-        Me.Borderleft.Location = New System.Drawing.Point(94, 287)
-        Me.Borderleft.Name = "Borderleft"
-        Me.Borderleft.Size = New System.Drawing.Size(49, 41)
-        Me.Borderleft.TabIndex = 5
-        Me.Borderleft.TabStop = False
-        Me.Borderleft.Visible = False
+        Me.Bordertopleft.Location = New System.Drawing.Point(92, 144)
+        Me.Bordertopleft.Name = "Bordertopleft"
+        Me.Bordertopleft.Size = New System.Drawing.Size(49, 41)
+        Me.Bordertopleft.TabIndex = 5
+        Me.Bordertopleft.TabStop = False
+        Me.Bordertopleft.Visible = False
         '
-        'borderup
+        'borderdownright
         '
-        Me.borderup.Location = New System.Drawing.Point(1014, 287)
-        Me.borderup.Name = "borderup"
-        Me.borderup.Size = New System.Drawing.Size(42, 41)
-        Me.borderup.TabIndex = 6
-        Me.borderup.TabStop = False
-        Me.borderup.Visible = False
+        Me.borderdownright.Location = New System.Drawing.Point(1089, 324)
+        Me.borderdownright.Name = "borderdownright"
+        Me.borderdownright.Size = New System.Drawing.Size(42, 41)
+        Me.borderdownright.TabIndex = 6
+        Me.borderdownright.TabStop = False
+        Me.borderdownright.Visible = False
         '
         'Menustrip
         '
@@ -163,8 +165,8 @@ Partial Class Mundo2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1143, 434)
-        Me.Controls.Add(Me.borderup)
-        Me.Controls.Add(Me.Borderleft)
+        Me.Controls.Add(Me.borderdownright)
+        Me.Controls.Add(Me.Bordertopleft)
         Me.Controls.Add(Me.character)
         Me.Controls.Add(Me.lblescola)
         Me.Controls.Add(Me.lblbiblio)
@@ -176,8 +178,8 @@ Partial Class Mundo2
         Me.Name = "Mundo2"
         Me.Text = "Mundo2"
         CType(Me.character, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Borderleft, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.borderup, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Bordertopleft, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.borderdownright, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menustrip.ResumeLayout(False)
         Me.Menustrip.PerformLayout()
         Me.ResumeLayout(False)
@@ -191,8 +193,8 @@ Partial Class Mundo2
     Friend WithEvents lblescola As Label
     Friend WithEvents Ticks As Timer
     Friend WithEvents character As PictureBox
-    Friend WithEvents Borderleft As PictureBox
-    Friend WithEvents borderup As PictureBox
+    Friend WithEvents Bordertopleft As PictureBox
+    Friend WithEvents borderdownright As PictureBox
     Friend WithEvents Menustrip As MenuStrip
     Friend WithEvents OpçõesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AutoresToolStripMenuItem As ToolStripMenuItem
