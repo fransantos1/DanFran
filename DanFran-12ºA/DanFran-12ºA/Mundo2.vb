@@ -3,17 +3,16 @@
     Dim cima As Boolean = False
     Dim esquerda As Boolean = False
     Dim direita As Boolean = False
-    Dim verificador As Boolean = False
-
-
-
+    'Load form
     Private Sub Mundo2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lbllab.BackColor = Color.Transparent
         lblrcade.BackColor = Color.Transparent
         lblescola.BackColor = Color.Transparent
         lblbiblio.BackColor = Color.Transparent
         Ticks.Start()
+        puzzle2 = True
     End Sub
+    'boolean de movimentos
     Private Sub Mundo2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         Select Case e.KeyValue
             Case Keys.W
@@ -38,7 +37,7 @@
                 esquerda = False
         End Select
     End Sub
-
+    'funçao de colisões
     Private Function Collisions(ByVal Object1 As Object, ByVal Object2 As Object) As Boolean
         Dim collide As Boolean = False
         If Object1.Top + Object1.Height >= Object2.Top And
@@ -49,8 +48,9 @@
         End If
         Return Collisions
     End Function
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Ticks.Tick
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Ticks.Tick
+        'movimento
         If cima = True Then
             If character.Top > borderup.Top + borderup.Height Then
                 character.Top = character.Top - 5
@@ -68,16 +68,14 @@
             character.Left = character.Left + 5
         End If
 
-
+        'colisões com os puzzles
         If Collisions(character, lblbiblio) = True Then
             Me.Hide()
             Trivia.Show()
-
         End If
 
         If Collisions(character, lblescola) = True And
-                verificador = False Then
-            verificador = True
+                puzzle2 = True Then
             Me.Hide()
             Puzzle.Show()
             cima = False
@@ -89,6 +87,7 @@
         If Collisions(character, lbllab) = True Then
 
         End If
+
         If Collisions(character, lblrcade) = True Then
             Me.Hide()
             Pok_Man.Show()
@@ -96,14 +95,14 @@
 
         End If
     End Sub
-
-
-
-    Private Sub character_Click(sender As Object, e As EventArgs) Handles character.Click
-
+    'menu strip
+    Private Sub SairToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairToolStripMenuItem.Click
+        End
     End Sub
 
-    Private Sub lblescola_Click(sender As Object, e As EventArgs) Handles lblescola.Click
-
+    Private Sub AutoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AutoresToolStripMenuItem.Click
+        MsgBox("Francisco e Daniela", MsgBoxStyle.Information, "Autores")
     End Sub
+
+
 End Class

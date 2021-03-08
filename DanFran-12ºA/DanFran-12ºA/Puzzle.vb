@@ -4,7 +4,7 @@
             MsgBox("Conseguiste :DD", MsgBoxStyle.Information, "Parabéns")
             Me.Hide()
             Mundo2.Show()
-
+            puzzle2 = False
         Else
             MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
         End If

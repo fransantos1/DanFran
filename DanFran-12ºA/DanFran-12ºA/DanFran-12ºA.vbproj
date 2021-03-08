@@ -136,6 +136,7 @@
     <Compile Include="Trivia.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="variaveis.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pok-Man.resx">

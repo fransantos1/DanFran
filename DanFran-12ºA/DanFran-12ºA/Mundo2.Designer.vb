@@ -31,9 +31,18 @@ Partial Class Mundo2
         Me.character = New System.Windows.Forms.PictureBox()
         Me.Borderleft = New System.Windows.Forms.PictureBox()
         Me.borderup = New System.Windows.Forms.PictureBox()
+        Me.Menustrip = New System.Windows.Forms.MenuStrip()
+        Me.OpçõesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AutoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LabToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ArcadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BibliotecaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EscolaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Borderleft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.borderup, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Menustrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'lbllab
@@ -94,6 +103,58 @@ Partial Class Mundo2
         Me.borderup.TabStop = False
         Me.borderup.Visible = False
         '
+        'Menustrip
+        '
+        Me.Menustrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpçõesToolStripMenuItem, Me.AutoresToolStripMenuItem, Me.SairToolStripMenuItem})
+        Me.Menustrip.Location = New System.Drawing.Point(0, 0)
+        Me.Menustrip.Name = "Menustrip"
+        Me.Menustrip.Size = New System.Drawing.Size(1143, 24)
+        Me.Menustrip.TabIndex = 7
+        Me.Menustrip.Text = "MenuStrip1"
+        '
+        'OpçõesToolStripMenuItem
+        '
+        Me.OpçõesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LabToolStripMenuItem, Me.ArcadeToolStripMenuItem, Me.BibliotecaToolStripMenuItem, Me.EscolaToolStripMenuItem})
+        Me.OpçõesToolStripMenuItem.Name = "OpçõesToolStripMenuItem"
+        Me.OpçõesToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
+        Me.OpçõesToolStripMenuItem.Text = "Jogos"
+        '
+        'AutoresToolStripMenuItem
+        '
+        Me.AutoresToolStripMenuItem.Name = "AutoresToolStripMenuItem"
+        Me.AutoresToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.AutoresToolStripMenuItem.Text = "Autores"
+        '
+        'SairToolStripMenuItem
+        '
+        Me.SairToolStripMenuItem.Name = "SairToolStripMenuItem"
+        Me.SairToolStripMenuItem.Size = New System.Drawing.Size(38, 20)
+        Me.SairToolStripMenuItem.Text = "Sair"
+        '
+        'LabToolStripMenuItem
+        '
+        Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
+        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LabToolStripMenuItem.Text = "Lab"
+        '
+        'ArcadeToolStripMenuItem
+        '
+        Me.ArcadeToolStripMenuItem.Name = "ArcadeToolStripMenuItem"
+        Me.ArcadeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ArcadeToolStripMenuItem.Text = "Arcade"
+        '
+        'BibliotecaToolStripMenuItem
+        '
+        Me.BibliotecaToolStripMenuItem.Name = "BibliotecaToolStripMenuItem"
+        Me.BibliotecaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BibliotecaToolStripMenuItem.Text = "Biblioteca"
+        '
+        'EscolaToolStripMenuItem
+        '
+        Me.EscolaToolStripMenuItem.Name = "EscolaToolStripMenuItem"
+        Me.EscolaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EscolaToolStripMenuItem.Text = "Escola"
+        '
         'Mundo2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -108,12 +169,17 @@ Partial Class Mundo2
         Me.Controls.Add(Me.lblbiblio)
         Me.Controls.Add(Me.lblrcade)
         Me.Controls.Add(Me.lbllab)
+        Me.Controls.Add(Me.Menustrip)
+        Me.MainMenuStrip = Me.Menustrip
         Me.Name = "Mundo2"
         Me.Text = "Mundo2"
         CType(Me.character, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Borderleft, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.borderup, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Menustrip.ResumeLayout(False)
+        Me.Menustrip.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -125,4 +191,12 @@ Partial Class Mundo2
     Friend WithEvents character As PictureBox
     Friend WithEvents Borderleft As PictureBox
     Friend WithEvents borderup As PictureBox
+    Friend WithEvents Menustrip As MenuStrip
+    Friend WithEvents OpçõesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AutoresToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SairToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LabToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ArcadeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BibliotecaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EscolaToolStripMenuItem As ToolStripMenuItem
 End Class
