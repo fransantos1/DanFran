@@ -189,9 +189,6 @@
     <None Include="Resources\windows.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mapadef.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\puzzleA.png" />
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +214,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\triviabg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapadef.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

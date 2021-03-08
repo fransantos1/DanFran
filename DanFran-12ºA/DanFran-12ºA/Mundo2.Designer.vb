@@ -23,6 +23,7 @@ Partial Class Mundo2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Mundo2))
         Me.lbllab = New System.Windows.Forms.Label()
         Me.lblrcade = New System.Windows.Forms.Label()
         Me.lblbiblio = New System.Windows.Forms.Label()
@@ -33,12 +34,12 @@ Partial Class Mundo2
         Me.borderup = New System.Windows.Forms.PictureBox()
         Me.Menustrip = New System.Windows.Forms.MenuStrip()
         Me.OpçõesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AutoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LabToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArcadeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BibliotecaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EscolaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AutoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Borderleft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.borderup, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -47,28 +48,28 @@ Partial Class Mundo2
         '
         'lbllab
         '
-        Me.lbllab.Location = New System.Drawing.Point(207, 262)
+        Me.lbllab.Location = New System.Drawing.Point(231, 250)
         Me.lbllab.Name = "lbllab"
         Me.lbllab.Size = New System.Drawing.Size(47, 23)
         Me.lbllab.TabIndex = 0
         '
         'lblrcade
         '
-        Me.lblrcade.Location = New System.Drawing.Point(383, 262)
+        Me.lblrcade.Location = New System.Drawing.Point(399, 250)
         Me.lblrcade.Name = "lblrcade"
         Me.lblrcade.Size = New System.Drawing.Size(47, 23)
         Me.lblrcade.TabIndex = 1
         '
         'lblbiblio
         '
-        Me.lblbiblio.Location = New System.Drawing.Point(703, 250)
+        Me.lblbiblio.Location = New System.Drawing.Point(700, 236)
         Me.lblbiblio.Name = "lblbiblio"
         Me.lblbiblio.Size = New System.Drawing.Size(47, 23)
         Me.lblbiblio.TabIndex = 2
         '
         'lblescola
         '
-        Me.lblescola.Location = New System.Drawing.Point(954, 250)
+        Me.lblescola.Location = New System.Drawing.Point(927, 236)
         Me.lblescola.Name = "lblescola"
         Me.lblescola.Size = New System.Drawing.Size(47, 23)
         Me.lblescola.TabIndex = 3
@@ -79,7 +80,7 @@ Partial Class Mundo2
         '
         'character
         '
-        Me.character.Location = New System.Drawing.Point(422, 316)
+        Me.character.Location = New System.Drawing.Point(482, 302)
         Me.character.Name = "character"
         Me.character.Size = New System.Drawing.Size(54, 50)
         Me.character.TabIndex = 4
@@ -87,7 +88,7 @@ Partial Class Mundo2
         '
         'Borderleft
         '
-        Me.Borderleft.Location = New System.Drawing.Point(43, 399)
+        Me.Borderleft.Location = New System.Drawing.Point(94, 287)
         Me.Borderleft.Name = "Borderleft"
         Me.Borderleft.Size = New System.Drawing.Size(49, 41)
         Me.Borderleft.TabIndex = 5
@@ -96,7 +97,7 @@ Partial Class Mundo2
         '
         'borderup
         '
-        Me.borderup.Location = New System.Drawing.Point(1071, 218)
+        Me.borderup.Location = New System.Drawing.Point(1014, 287)
         Me.borderup.Name = "borderup"
         Me.borderup.Size = New System.Drawing.Size(42, 41)
         Me.borderup.TabIndex = 6
@@ -119,6 +120,30 @@ Partial Class Mundo2
         Me.OpçõesToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
         Me.OpçõesToolStripMenuItem.Text = "Jogos"
         '
+        'LabToolStripMenuItem
+        '
+        Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
+        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.LabToolStripMenuItem.Text = "Lab"
+        '
+        'ArcadeToolStripMenuItem
+        '
+        Me.ArcadeToolStripMenuItem.Name = "ArcadeToolStripMenuItem"
+        Me.ArcadeToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.ArcadeToolStripMenuItem.Text = "Arcade"
+        '
+        'BibliotecaToolStripMenuItem
+        '
+        Me.BibliotecaToolStripMenuItem.Name = "BibliotecaToolStripMenuItem"
+        Me.BibliotecaToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.BibliotecaToolStripMenuItem.Text = "Biblioteca"
+        '
+        'EscolaToolStripMenuItem
+        '
+        Me.EscolaToolStripMenuItem.Name = "EscolaToolStripMenuItem"
+        Me.EscolaToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.EscolaToolStripMenuItem.Text = "Escola"
+        '
         'AutoresToolStripMenuItem
         '
         Me.AutoresToolStripMenuItem.Name = "AutoresToolStripMenuItem"
@@ -131,35 +156,11 @@ Partial Class Mundo2
         Me.SairToolStripMenuItem.Size = New System.Drawing.Size(38, 20)
         Me.SairToolStripMenuItem.Text = "Sair"
         '
-        'LabToolStripMenuItem
-        '
-        Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
-        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.LabToolStripMenuItem.Text = "Lab"
-        '
-        'ArcadeToolStripMenuItem
-        '
-        Me.ArcadeToolStripMenuItem.Name = "ArcadeToolStripMenuItem"
-        Me.ArcadeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ArcadeToolStripMenuItem.Text = "Arcade"
-        '
-        'BibliotecaToolStripMenuItem
-        '
-        Me.BibliotecaToolStripMenuItem.Name = "BibliotecaToolStripMenuItem"
-        Me.BibliotecaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.BibliotecaToolStripMenuItem.Text = "Biblioteca"
-        '
-        'EscolaToolStripMenuItem
-        '
-        Me.EscolaToolStripMenuItem.Name = "EscolaToolStripMenuItem"
-        Me.EscolaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.EscolaToolStripMenuItem.Text = "Escola"
-        '
         'Mundo2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.mapadef
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1143, 434)
         Me.Controls.Add(Me.borderup)
@@ -170,6 +171,7 @@ Partial Class Mundo2
         Me.Controls.Add(Me.lblrcade)
         Me.Controls.Add(Me.lbllab)
         Me.Controls.Add(Me.Menustrip)
+        Me.DoubleBuffered = True
         Me.MainMenuStrip = Me.Menustrip
         Me.Name = "Mundo2"
         Me.Text = "Mundo2"
