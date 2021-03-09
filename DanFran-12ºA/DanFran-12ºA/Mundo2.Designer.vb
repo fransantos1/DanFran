@@ -55,7 +55,7 @@ Partial Class Mundo2
         '
         'lblrcade
         '
-        Me.lblrcade.Location = New System.Drawing.Point(399, 250)
+        Me.lblrcade.Location = New System.Drawing.Point(399, 236)
         Me.lblrcade.Name = "lblrcade"
         Me.lblrcade.Size = New System.Drawing.Size(47, 23)
         Me.lblrcade.TabIndex = 1
@@ -125,25 +125,25 @@ Partial Class Mundo2
         'LabToolStripMenuItem
         '
         Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
-        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LabToolStripMenuItem.Text = "Lab"
         '
         'ArcadeToolStripMenuItem
         '
         Me.ArcadeToolStripMenuItem.Name = "ArcadeToolStripMenuItem"
-        Me.ArcadeToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.ArcadeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ArcadeToolStripMenuItem.Text = "Arcade"
         '
         'BibliotecaToolStripMenuItem
         '
         Me.BibliotecaToolStripMenuItem.Name = "BibliotecaToolStripMenuItem"
-        Me.BibliotecaToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.BibliotecaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BibliotecaToolStripMenuItem.Text = "Biblioteca"
         '
         'EscolaToolStripMenuItem
         '
         Me.EscolaToolStripMenuItem.Name = "EscolaToolStripMenuItem"
-        Me.EscolaToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.EscolaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.EscolaToolStripMenuItem.Text = "Escola"
         '
         'AutoresToolStripMenuItem
