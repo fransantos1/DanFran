@@ -36,6 +36,8 @@ Partial Class Trivia
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,9 +68,9 @@ Partial Class Trivia
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(15, 27)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(106, 25)
+        Me.CheckBox1.Size = New System.Drawing.Size(63, 25)
         Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.Text = "2:00"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -78,7 +80,7 @@ Partial Class Trivia
         Me.GroupBox1.Controls.Add(Me.CheckBox2)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(85, 160)
+        Me.GroupBox1.Location = New System.Drawing.Point(85, 159)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(182, 136)
         Me.GroupBox1.TabIndex = 3
@@ -90,9 +92,9 @@ Partial Class Trivia
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Location = New System.Drawing.Point(15, 83)
         Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(106, 25)
+        Me.CheckBox3.Size = New System.Drawing.Size(72, 25)
         Me.CheckBox3.TabIndex = 5
-        Me.CheckBox3.Text = "CheckBox3"
+        Me.CheckBox3.Text = "23:00"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
         'CheckBox2
@@ -100,9 +102,9 @@ Partial Class Trivia
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Location = New System.Drawing.Point(15, 54)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(106, 25)
+        Me.CheckBox2.Size = New System.Drawing.Size(72, 25)
         Me.CheckBox2.TabIndex = 5
-        Me.CheckBox2.Text = "CheckBox2"
+        Me.CheckBox2.Text = "15:00"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'Label1
@@ -194,6 +196,30 @@ Partial Class Trivia
         Me.Label7.Text = "A bibliotecária precisa da tua ajuda para completar o seu trabalho. Completa as s" &
     "eguintes tarefas para a ajudar."
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.PaleGreen
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Forte", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button1.Location = New System.Drawing.Point(989, 374)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(97, 30)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "Confirmar"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(90, 101)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(157, 27)
+        Me.Label8.TabIndex = 13
+        Me.Label8.Text = "Que horas são?"
+        '
         'Trivia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -201,6 +227,8 @@ Partial Class Trivia
         Me.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.triviabg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1115, 416)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -235,4 +263,6 @@ Partial Class Trivia
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label8 As Label
 End Class

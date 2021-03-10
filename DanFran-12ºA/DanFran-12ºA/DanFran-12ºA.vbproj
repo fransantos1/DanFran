@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mundo3.Designer.vb">
+      <DependentUpon>Mundo3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mundo3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pok-Man.Designer.vb">
       <DependentUpon>Pok-Man.vb</DependentUpon>
     </Compile>
@@ -139,6 +145,9 @@
     <Compile Include="variaveis.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Mundo3.resx">
+      <DependentUpon>Mundo3.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pok-Man.resx">
       <DependentUpon>Pok-Man.vb</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +229,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Character.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minotaurmaze.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -36,3 +36,18 @@ D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFr
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Regras.resources
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Trivia.resources
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.vbproj.GenerateResource.Cache
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\bin\Debug\DanFran-12ºA.exe
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\bin\Debug\DanFran-12ºA.pdb
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\bin\Debug\DanFran-12ºA.xml
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.vbprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Mundo3.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Pok_Man.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Puzzle.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Game.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Login.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Main.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Mundo2.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Resources.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Regras.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Trivia.resources
+C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.vbproj.GenerateResource.Cache
