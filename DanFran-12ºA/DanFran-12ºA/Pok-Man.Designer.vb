@@ -22,6 +22,7 @@ Partial Class Pok_Man
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -43,7 +44,10 @@ Partial Class Pok_Man
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.pok = New System.Windows.Forms.PictureBox()
+        Me.ticks = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pok, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -53,6 +57,7 @@ Partial Class Pok_Man
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(21, 188)
         Me.Label2.TabIndex = 1
+        Me.Label2.Tag = ""
         '
         'Label3
         '
@@ -61,6 +66,7 @@ Partial Class Pok_Man
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(21, 361)
         Me.Label3.TabIndex = 2
+        Me.Label3.Tag = ""
         '
         'Label4
         '
@@ -69,6 +75,7 @@ Partial Class Pok_Man
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(21, 200)
         Me.Label4.TabIndex = 3
+        Me.Label4.Tag = ""
         '
         'Label5
         '
@@ -77,6 +84,7 @@ Partial Class Pok_Man
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(21, 125)
         Me.Label5.TabIndex = 4
+        Me.Label5.Tag = ""
         '
         'Label6
         '
@@ -85,6 +93,7 @@ Partial Class Pok_Man
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(21, 73)
         Me.Label6.TabIndex = 5
+        Me.Label6.Tag = ""
         '
         'Label7
         '
@@ -93,6 +102,7 @@ Partial Class Pok_Man
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(21, 73)
         Me.Label7.TabIndex = 6
+        Me.Label7.Tag = ""
         '
         'Label8
         '
@@ -101,6 +111,7 @@ Partial Class Pok_Man
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(21, 361)
         Me.Label8.TabIndex = 7
+        Me.Label8.Tag = ""
         '
         'Label9
         '
@@ -109,6 +120,7 @@ Partial Class Pok_Man
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(21, 137)
         Me.Label9.TabIndex = 8
+        Me.Label9.Tag = ""
         '
         'Label10
         '
@@ -117,6 +129,7 @@ Partial Class Pok_Man
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(434, 22)
         Me.Label10.TabIndex = 9
+        Me.Label10.Tag = ""
         '
         'Label11
         '
@@ -125,6 +138,7 @@ Partial Class Pok_Man
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(453, 22)
         Me.Label11.TabIndex = 10
+        Me.Label11.Tag = ""
         '
         'Label12
         '
@@ -133,6 +147,7 @@ Partial Class Pok_Man
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(166, 22)
         Me.Label12.TabIndex = 11
+        Me.Label12.Tag = ""
         '
         'Label13
         '
@@ -141,6 +156,7 @@ Partial Class Pok_Man
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(88, 22)
         Me.Label13.TabIndex = 12
+        Me.Label13.Tag = ""
         '
         'Label14
         '
@@ -149,6 +165,7 @@ Partial Class Pok_Man
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(88, 22)
         Me.Label14.TabIndex = 13
+        Me.Label14.Tag = ""
         '
         'Label15
         '
@@ -157,6 +174,7 @@ Partial Class Pok_Man
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(88, 22)
         Me.Label15.TabIndex = 14
+        Me.Label15.Tag = ""
         '
         'Label16
         '
@@ -165,6 +183,7 @@ Partial Class Pok_Man
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(88, 22)
         Me.Label16.TabIndex = 15
+        Me.Label16.Tag = ""
         '
         'Label17
         '
@@ -173,6 +192,7 @@ Partial Class Pok_Man
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(96, 22)
         Me.Label17.TabIndex = 16
+        Me.Label17.Tag = ""
         '
         'Label18
         '
@@ -181,6 +201,7 @@ Partial Class Pok_Man
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(88, 22)
         Me.Label18.TabIndex = 17
+        Me.Label18.Tag = ""
         '
         'Label19
         '
@@ -189,6 +210,7 @@ Partial Class Pok_Man
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(88, 22)
         Me.Label19.TabIndex = 18
+        Me.Label19.Tag = ""
         '
         'Label20
         '
@@ -197,6 +219,7 @@ Partial Class Pok_Man
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(170, 22)
         Me.Label20.TabIndex = 19
+        Me.Label20.Tag = ""
         '
         'Label21
         '
@@ -205,6 +228,7 @@ Partial Class Pok_Man
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(135, 22)
         Me.Label21.TabIndex = 20
+        Me.Label21.Tag = ""
         '
         'PictureBox1
         '
@@ -216,6 +240,19 @@ Partial Class Pok_Man
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
         '
+        'pok
+        '
+        Me.pok.BackColor = System.Drawing.Color.Gold
+        Me.pok.Location = New System.Drawing.Point(112, 190)
+        Me.pok.Name = "pok"
+        Me.pok.Size = New System.Drawing.Size(16, 16)
+        Me.pok.TabIndex = 23
+        Me.pok.TabStop = False
+        '
+        'ticks
+        '
+        Me.ticks.Interval = 10
+        '
         'Pok_Man
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -223,6 +260,7 @@ Partial Class Pok_Man
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(468, 502)
+        Me.Controls.Add(Me.pok)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label20)
@@ -247,6 +285,7 @@ Partial Class Pok_Man
         Me.Name = "Pok_Man"
         Me.Text = "Pok_Man"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pok, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -271,4 +310,6 @@ Partial Class Pok_Man
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents pok As PictureBox
+    Friend WithEvents ticks As Timer
 End Class

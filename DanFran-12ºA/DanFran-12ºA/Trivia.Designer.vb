@@ -27,7 +27,7 @@ Partial Class Trivia
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.correct = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,6 +38,7 @@ Partial Class Trivia
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Binserir = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,9 +59,9 @@ Partial Class Trivia
         Me.ListBNomes.ForeColor = System.Drawing.Color.White
         Me.ListBNomes.FormattingEnabled = True
         Me.ListBNomes.ItemHeight = 15
-        Me.ListBNomes.Location = New System.Drawing.Point(543, 173)
+        Me.ListBNomes.Location = New System.Drawing.Point(537, 158)
         Me.ListBNomes.Name = "ListBNomes"
-        Me.ListBNomes.Size = New System.Drawing.Size(110, 79)
+        Me.ListBNomes.Size = New System.Drawing.Size(116, 79)
         Me.ListBNomes.TabIndex = 1
         '
         'CheckBox1
@@ -77,7 +78,7 @@ Partial Class Trivia
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.CheckBox3)
-        Me.GroupBox1.Controls.Add(Me.CheckBox2)
+        Me.GroupBox1.Controls.Add(Me.correct)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(85, 159)
@@ -97,15 +98,15 @@ Partial Class Trivia
         Me.CheckBox3.Text = "23:00"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'correct
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(15, 54)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(72, 25)
-        Me.CheckBox2.TabIndex = 5
-        Me.CheckBox2.Text = "15:00"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.correct.AutoSize = True
+        Me.correct.Location = New System.Drawing.Point(15, 54)
+        Me.correct.Name = "correct"
+        Me.correct.Size = New System.Drawing.Size(72, 25)
+        Me.correct.TabIndex = 5
+        Me.correct.Text = "15:00"
+        Me.correct.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -220,6 +221,16 @@ Partial Class Trivia
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Que horas são?"
         '
+        'Binserir
+        '
+        Me.Binserir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Binserir.Location = New System.Drawing.Point(578, 242)
+        Me.Binserir.Name = "Binserir"
+        Me.Binserir.Size = New System.Drawing.Size(75, 23)
+        Me.Binserir.TabIndex = 14
+        Me.Binserir.Text = "Insirir"
+        Me.Binserir.UseVisualStyleBackColor = True
+        '
         'Trivia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -227,6 +238,7 @@ Partial Class Trivia
         Me.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.triviabg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1115, 416)
+        Me.Controls.Add(Me.Binserir)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label7)
@@ -255,7 +267,7 @@ Partial Class Trivia
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents correct As CheckBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
@@ -265,4 +277,5 @@ Partial Class Trivia
     Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label8 As Label
+    Friend WithEvents Binserir As Button
 End Class

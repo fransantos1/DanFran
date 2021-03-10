@@ -48,7 +48,7 @@ Partial Class Mundo2
         '
         'lbllab
         '
-        Me.lbllab.Location = New System.Drawing.Point(231, 250)
+        Me.lbllab.Location = New System.Drawing.Point(231, 236)
         Me.lbllab.Name = "lbllab"
         Me.lbllab.Size = New System.Drawing.Size(47, 23)
         Me.lbllab.TabIndex = 0
@@ -62,14 +62,14 @@ Partial Class Mundo2
         '
         'lblbiblio
         '
-        Me.lblbiblio.Location = New System.Drawing.Point(700, 236)
+        Me.lblbiblio.Location = New System.Drawing.Point(699, 218)
         Me.lblbiblio.Name = "lblbiblio"
         Me.lblbiblio.Size = New System.Drawing.Size(47, 23)
         Me.lblbiblio.TabIndex = 2
         '
         'lblescola
         '
-        Me.lblescola.Location = New System.Drawing.Point(938, 236)
+        Me.lblescola.Location = New System.Drawing.Point(938, 218)
         Me.lblescola.Name = "lblescola"
         Me.lblescola.Size = New System.Drawing.Size(36, 23)
         Me.lblescola.TabIndex = 3
@@ -125,25 +125,25 @@ Partial Class Mundo2
         'LabToolStripMenuItem
         '
         Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
-        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.LabToolStripMenuItem.Text = "Lab"
         '
         'ArcadeToolStripMenuItem
         '
         Me.ArcadeToolStripMenuItem.Name = "ArcadeToolStripMenuItem"
-        Me.ArcadeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ArcadeToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.ArcadeToolStripMenuItem.Text = "Arcade"
         '
         'BibliotecaToolStripMenuItem
         '
         Me.BibliotecaToolStripMenuItem.Name = "BibliotecaToolStripMenuItem"
-        Me.BibliotecaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BibliotecaToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.BibliotecaToolStripMenuItem.Text = "Biblioteca"
         '
         'EscolaToolStripMenuItem
         '
         Me.EscolaToolStripMenuItem.Name = "EscolaToolStripMenuItem"
-        Me.EscolaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EscolaToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.EscolaToolStripMenuItem.Text = "Escola"
         '
         'AutoresToolStripMenuItem
