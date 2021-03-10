@@ -24,12 +24,12 @@ Partial Class Trivia
     Private Sub InitializeComponent()
         Me.CBvila = New System.Windows.Forms.ComboBox()
         Me.ListBNomes = New System.Windows.Forms.ListBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Chk1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.Chk3 = New System.Windows.Forms.CheckBox()
         Me.correct = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtnomes = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -39,6 +39,7 @@ Partial Class Trivia
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Binserir = New System.Windows.Forms.Button()
+        Me.BLimpar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,22 +65,22 @@ Partial Class Trivia
         Me.ListBNomes.Size = New System.Drawing.Size(116, 79)
         Me.ListBNomes.TabIndex = 1
         '
-        'CheckBox1
+        'Chk1
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(15, 27)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(63, 25)
-        Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.Text = "2:00"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Chk1.AutoSize = True
+        Me.Chk1.Location = New System.Drawing.Point(15, 27)
+        Me.Chk1.Name = "Chk1"
+        Me.Chk1.Size = New System.Drawing.Size(63, 25)
+        Me.Chk1.TabIndex = 2
+        Me.Chk1.Text = "2:00"
+        Me.Chk1.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox1.Controls.Add(Me.CheckBox3)
+        Me.GroupBox1.Controls.Add(Me.Chk3)
         Me.GroupBox1.Controls.Add(Me.correct)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.Chk1)
         Me.GroupBox1.Font = New System.Drawing.Font("Comic Sans MS", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(85, 159)
         Me.GroupBox1.Name = "GroupBox1"
@@ -88,15 +89,15 @@ Partial Class Trivia
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Escolha uma opção"
         '
-        'CheckBox3
+        'Chk3
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(15, 83)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(72, 25)
-        Me.CheckBox3.TabIndex = 5
-        Me.CheckBox3.Text = "23:00"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.Chk3.AutoSize = True
+        Me.Chk3.Location = New System.Drawing.Point(15, 83)
+        Me.Chk3.Name = "Chk3"
+        Me.Chk3.Size = New System.Drawing.Size(72, 25)
+        Me.Chk3.TabIndex = 5
+        Me.Chk3.Text = "23:00"
+        Me.Chk3.UseVisualStyleBackColor = True
         '
         'correct
         '
@@ -119,23 +120,23 @@ Partial Class Trivia
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Qual é o nome desta vila?"
         '
-        'TextBox1
+        'txtnomes
         '
-        Me.TextBox1.Location = New System.Drawing.Point(537, 132)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(116, 20)
-        Me.TextBox1.TabIndex = 5
+        Me.txtnomes.Location = New System.Drawing.Point(537, 132)
+        Me.txtnomes.Name = "txtnomes"
+        Me.txtnomes.Size = New System.Drawing.Size(116, 20)
+        Me.txtnomes.TabIndex = 5
         '
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(420, 117)
+        Me.Label2.Location = New System.Drawing.Point(420, 112)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 86)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Carregue os seguintes nomes de criminosos para a base de dados:"
+        Me.Label2.Text = "Carregue os nomes dos seguintes criminosos para a base de dados:"
         '
         'Label3
         '
@@ -143,7 +144,7 @@ Partial Class Trivia
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(420, 197)
+        Me.Label3.Location = New System.Drawing.Point(420, 189)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(73, 13)
         Me.Label3.TabIndex = 7
@@ -155,7 +156,7 @@ Partial Class Trivia
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(420, 226)
+        Me.Label4.Location = New System.Drawing.Point(418, 221)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(85, 13)
         Me.Label4.TabIndex = 8
@@ -167,7 +168,7 @@ Partial Class Trivia
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(420, 255)
+        Me.Label5.Location = New System.Drawing.Point(417, 246)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(133, 13)
         Me.Label5.TabIndex = 9
@@ -223,13 +224,27 @@ Partial Class Trivia
         '
         'Binserir
         '
-        Me.Binserir.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Binserir.Location = New System.Drawing.Point(578, 242)
+        Me.Binserir.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Binserir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Binserir.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Binserir.Location = New System.Drawing.Point(608, 242)
         Me.Binserir.Name = "Binserir"
-        Me.Binserir.Size = New System.Drawing.Size(75, 23)
+        Me.Binserir.Size = New System.Drawing.Size(53, 23)
         Me.Binserir.TabIndex = 14
-        Me.Binserir.Text = "Insirir"
-        Me.Binserir.UseVisualStyleBackColor = True
+        Me.Binserir.Text = "Inserir"
+        Me.Binserir.UseVisualStyleBackColor = False
+        '
+        'BLimpar
+        '
+        Me.BLimpar.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.BLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BLimpar.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BLimpar.Location = New System.Drawing.Point(548, 242)
+        Me.BLimpar.Name = "BLimpar"
+        Me.BLimpar.Size = New System.Drawing.Size(57, 23)
+        Me.BLimpar.TabIndex = 15
+        Me.BLimpar.Text = "Limpar"
+        Me.BLimpar.UseVisualStyleBackColor = False
         '
         'Trivia
         '
@@ -238,6 +253,7 @@ Partial Class Trivia
         Me.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.triviabg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1115, 416)
+        Me.Controls.Add(Me.BLimpar)
         Me.Controls.Add(Me.Binserir)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button1)
@@ -247,7 +263,7 @@ Partial Class Trivia
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtnomes)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ListBNomes)
@@ -263,12 +279,12 @@ Partial Class Trivia
 
     Friend WithEvents CBvila As ComboBox
     Friend WithEvents ListBNomes As ListBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Chk1 As CheckBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents Chk3 As CheckBox
     Friend WithEvents correct As CheckBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtnomes As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -278,4 +294,5 @@ Partial Class Trivia
     Friend WithEvents Button1 As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents Binserir As Button
+    Friend WithEvents BLimpar As Button
 End Class

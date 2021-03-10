@@ -10,8 +10,21 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If correct.Checked = True And
+        If correct.Checked = True And CBvila.SelectedIndex = 1 Then
+            MsgBox("Conseguiste! :DD", MsgBoxStyle.Information, "Parabéns")
+            Me.Hide()
+            Mundo2.Show()
+        Else
+            MsgBox("Tens algo errado...", MsgBoxStyle.Information, "Não conseguiste")
+        End If
 
+    End Sub
 
+    Private Sub Binserir_Click(sender As Object, e As EventArgs) Handles Binserir.Click
+        ListBNomes.Items.Add(txtnomes.Text)
+    End Sub
+
+    Private Sub BLimpar_Click(sender As Object, e As EventArgs) Handles BLimpar.Click
+        ListBNomes.Items.Clear()
     End Sub
 End Class

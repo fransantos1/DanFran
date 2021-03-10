@@ -166,5 +166,7 @@
         Puzzle.Show()
     End Sub
 
+    Private Sub lbllab_Click(sender As Object, e As EventArgs) Handles lbllab.Click
 
+    End Sub
 End Class
