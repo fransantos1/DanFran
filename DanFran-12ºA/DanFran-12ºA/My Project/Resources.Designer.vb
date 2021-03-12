@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property antagonist() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("antagonist", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Character() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Character", resourceCulture)
@@ -91,6 +101,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property nminotaur() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("nminotaur", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         '''</summary>
         Friend ReadOnly Property padlock() As System.Drawing.Icon
@@ -106,6 +126,26 @@ Namespace My.Resources
         Friend ReadOnly Property pokman() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pokman", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''</summary>
+        Friend ReadOnly Property pokmanchar() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pokmanchar", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pokmancherry2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pokmancherry2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

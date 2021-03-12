@@ -233,6 +233,27 @@
   <ItemGroup>
     <None Include="Resources\minotaurmaze.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antagonist.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nminotaur.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pebble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokmanchar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokmanchar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokmancherry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pokmancherry2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
