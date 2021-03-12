@@ -1,8 +1,12 @@
 ﻿Module variaveis
     Public Property puzzle2 As Boolean = True
+    Public Property puzzle3 As Boolean = True
     Public Property mathgame As Boolean = True
+    Public Property mathgame1 As Boolean = True
     Public Property pokman2 As Boolean = True
+    Public Property pokman3 As Boolean = True
     Public Property trivia2 As Boolean = True
+    Public Property trivia3 As Boolean = True
     'funçao de colisões
     Public Function Collisions(ByVal Object1 As Object, ByVal Object2 As Object) As Boolean
         Dim collide As Boolean = False

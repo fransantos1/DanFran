@@ -227,9 +227,9 @@ Partial Class Trivia
         Me.Binserir.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Binserir.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Binserir.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Binserir.Location = New System.Drawing.Point(608, 242)
+        Me.Binserir.Location = New System.Drawing.Point(603, 241)
         Me.Binserir.Name = "Binserir"
-        Me.Binserir.Size = New System.Drawing.Size(53, 23)
+        Me.Binserir.Size = New System.Drawing.Size(50, 23)
         Me.Binserir.TabIndex = 14
         Me.Binserir.Text = "Inserir"
         Me.Binserir.UseVisualStyleBackColor = False
@@ -241,7 +241,7 @@ Partial Class Trivia
         Me.BLimpar.Font = New System.Drawing.Font("Trebuchet MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BLimpar.Location = New System.Drawing.Point(548, 242)
         Me.BLimpar.Name = "BLimpar"
-        Me.BLimpar.Size = New System.Drawing.Size(57, 23)
+        Me.BLimpar.Size = New System.Drawing.Size(50, 23)
         Me.BLimpar.TabIndex = 15
         Me.BLimpar.Text = "Limpar"
         Me.BLimpar.UseVisualStyleBackColor = False

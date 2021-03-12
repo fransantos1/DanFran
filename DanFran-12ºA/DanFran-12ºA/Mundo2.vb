@@ -20,6 +20,7 @@
                 If String.ReferenceEquals(resultado, String.Empty) Then
                 ElseIf num1 + num2 = resultado Then
                     MsgBox("Conseguiste :DD", MsgBoxStyle.Information, "Parabéns")
+                    mathgame = False
                 Else
                     MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
                     lab()
@@ -30,6 +31,7 @@
                 If String.ReferenceEquals(resultado, String.Empty) Then
                 ElseIf num1 - num2 = resultado Then
                     MsgBox("Conseguiste :DD", MsgBoxStyle.Information, "Parabéns")
+                    mathgame = False
                 Else
                     MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
                     lab()
@@ -75,6 +77,7 @@
 
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Ticks.Tick
+
         'movimento
         If cima = True Then
             If character.Top > Bordertopleft.Top + Bordertopleft.Height Then
@@ -95,21 +98,25 @@
             character.Left = character.Left + 5
         End If
 
-        'colisões com biblioteca
-        If Collisions(character, lblbiblio) = True Then
+
+        'colisões com escola
+        If Collisions(character, lblescola) = True And
+            puzzle2 = True Then
             Me.Hide()
-            Trivia.Show()
+            Puzzle.Show()
+            character.Top = 264
+            character.Left = 554
             cima = False
             baixo = False
             direita = False
             esquerda = False
         End If
-        'colisões com escola
-        If Collisions(character, lblescola) = True And
-            puzzle2 = True Then
-            puzzle2 = False
+        'colisões com biblioteca
+        If Collisions(character, lblbiblio) = True Then
             Me.Hide()
-            Puzzle.Show()
+            Trivia.Show()
+            character.Top = 264
+            character.Left = 554
             cima = False
             baixo = False
             direita = False
@@ -118,7 +125,8 @@
         'colisões com lab
         If Collisions(character, lbllab) = True Then
             If mathgame = True Then
-                mathgame = False
+                character.Top = 264
+                character.Left = 554
                 cima = False
                 baixo = False
                 direita = False
@@ -167,6 +175,10 @@
     End Sub
 
     Private Sub lbllab_Click(sender As Object, e As EventArgs) Handles lbllab.Click
+
+    End Sub
+
+    Private Sub character_Click(sender As Object, e As EventArgs) Handles character.Click
 
     End Sub
 End Class

@@ -40,6 +40,7 @@ Partial Class Mundo2
         Me.EscolaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AutoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.gamprogress = New System.Windows.Forms.ProgressBar()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Bordertopleft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.borderdownright, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,7 +82,7 @@ Partial Class Mundo2
         'character
         '
         Me.character.Image = Global.DanFran_12ºA.My.Resources.Resources.Character
-        Me.character.Location = New System.Drawing.Point(550, 268)
+        Me.character.Location = New System.Drawing.Point(555, 267)
         Me.character.Name = "character"
         Me.character.Size = New System.Drawing.Size(26, 50)
         Me.character.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -158,6 +159,13 @@ Partial Class Mundo2
         Me.SairToolStripMenuItem.Size = New System.Drawing.Size(38, 20)
         Me.SairToolStripMenuItem.Text = "Sair"
         '
+        'gamprogress
+        '
+        Me.gamprogress.Location = New System.Drawing.Point(402, 399)
+        Me.gamprogress.Name = "gamprogress"
+        Me.gamprogress.Size = New System.Drawing.Size(344, 23)
+        Me.gamprogress.TabIndex = 8
+        '
         'Mundo2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -165,6 +173,7 @@ Partial Class Mundo2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1143, 434)
+        Me.Controls.Add(Me.gamprogress)
         Me.Controls.Add(Me.borderdownright)
         Me.Controls.Add(Me.Bordertopleft)
         Me.Controls.Add(Me.character)
@@ -203,4 +212,5 @@ Partial Class Mundo2
     Friend WithEvents ArcadeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BibliotecaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EscolaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents gamprogress As ProgressBar
 End Class
