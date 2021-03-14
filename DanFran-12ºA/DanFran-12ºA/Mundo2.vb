@@ -3,6 +3,7 @@
     Dim cima As Boolean = False
     Dim esquerda As Boolean = False
     Dim direita As Boolean = False
+    Dim start As Boolean = False
 
     'funçao lab
     Private Function lab()
@@ -97,53 +98,58 @@
         If direita = True Then
             character.Left = character.Left + 5
         End If
+        If Collisions(mau, character) Then
+            start = True
 
+        End If
 
-        'colisões com escola
-        If Collisions(character, lblescola) = True And
+        If start = True Then
+            'colisões com escola
+            If Collisions(character, lblescola) = True And
             puzzle2 = True Then
-            Me.Hide()
-            Puzzle.Show()
-            character.Top = 264
-            character.Left = 554
-            cima = False
-            baixo = False
-            direita = False
-            esquerda = False
-        End If
-        'colisões com biblioteca
-        If Collisions(character, lblbiblio) = True Then
-            Me.Hide()
-            Trivia.Show()
-            character.Top = 264
-            character.Left = 554
-            cima = False
-            baixo = False
-            direita = False
-            esquerda = False
-        End If
-        'colisões com lab
-        If Collisions(character, lbllab) = True Then
-            If mathgame = True Then
+                Me.Hide()
+                Puzzle.Show()
                 character.Top = 264
                 character.Left = 554
                 cima = False
                 baixo = False
                 direita = False
                 esquerda = False
-                lab()
             End If
-        End If
-        'colisões com arcade
-        If Collisions(character, lblrcade) = True And
-            pokman2 = True Then
-            pokman2 = False
-            cima = False
-            baixo = False
-            direita = False
-            esquerda = False
-            Me.Hide()
-            Pok_Man.Show()
+            'colisões com biblioteca
+            If Collisions(character, lblbiblio) = True Then
+                Me.Hide()
+                Trivia.Show()
+                character.Top = 264
+                character.Left = 554
+                cima = False
+                baixo = False
+                direita = False
+                esquerda = False
+            End If
+            'colisões com lab
+            If Collisions(character, lbllab) = True Then
+                If mathgame = True Then
+                    character.Top = 264
+                    character.Left = 554
+                    cima = False
+                    baixo = False
+                    direita = False
+                    esquerda = False
+                    lab()
+                End If
+            End If
+            'colisões com arcade
+            If Collisions(character, lblrcade) = True And
+                pokman2 = True Then
+                pokman2 = False
+                cima = False
+                baixo = False
+                direita = False
+                esquerda = False
+                Me.Hide()
+                Pok_Man.Show()
+            End If
         End If
     End Sub
     'menu strip
@@ -170,15 +176,15 @@
     End Sub
     'escolas
     Private Sub EscolaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EscolaToolStripMenuItem.Click
-        Me.Hide()
-        Puzzle.Show()
-    End Sub
-
-    Private Sub lbllab_Click(sender As Object, e As EventArgs) Handles lbllab.Click
-
+        If puzzle3 = False Then
+            Me.Hide()
+            Puzzle.Show()
+        End If
     End Sub
 
     Private Sub character_Click(sender As Object, e As EventArgs) Handles character.Click
 
     End Sub
+
+
 End Class
