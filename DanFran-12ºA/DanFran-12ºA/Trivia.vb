@@ -12,8 +12,10 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If correct.Checked = True And CBvila.SelectedIndex = 1 Then
             MsgBox("Conseguiste! :DD", MsgBoxStyle.Information, "Parabéns")
+            trivia2 = False
             Me.Hide()
             Mundo2.Show()
+            Mundo2.gamprogress.Increment(25)
         Else
             MsgBox("Tens algo errado...", MsgBoxStyle.Information, "Não conseguiste")
         End If
@@ -27,4 +29,6 @@
     Private Sub BLimpar_Click(sender As Object, e As EventArgs) Handles BLimpar.Click
         ListBNomes.Items.Clear()
     End Sub
+
+
 End Class

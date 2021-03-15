@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Main
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Main
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BJogar = New System.Windows.Forms.Button()
@@ -33,7 +33,7 @@ Partial Class Main
         Me.Label1.BackColor = System.Drawing.Color.RosyBrown
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(-15, 212)
+        Me.Label1.Location = New System.Drawing.Point(-16, 216)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(629, 111)
         Me.Label1.TabIndex = 0
@@ -84,6 +84,7 @@ Partial Class Main
         Me.Controls.Add(Me.BJogar)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Main"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
         Me.ResumeLayout(False)
 

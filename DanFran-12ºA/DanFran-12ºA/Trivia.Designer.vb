@@ -40,6 +40,7 @@ Partial Class Trivia
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Binserir = New System.Windows.Forms.Button()
         Me.BLimpar = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -132,7 +133,7 @@ Partial Class Trivia
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(420, 112)
+        Me.Label2.Location = New System.Drawing.Point(417, 119)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(108, 86)
         Me.Label2.TabIndex = 6
@@ -246,6 +247,17 @@ Partial Class Trivia
         Me.BLimpar.Text = "Limpar"
         Me.BLimpar.UseVisualStyleBackColor = False
         '
+        'Label9
+        '
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Consolas", 6.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(418, 101)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(65, 18)
+        Me.Label9.TabIndex = 16
+        Me.Label9.Text = "(não obrigatório)"
+        '
         'Trivia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -268,6 +280,7 @@ Partial Class Trivia
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ListBNomes)
         Me.Controls.Add(Me.CBvila)
+        Me.Controls.Add(Me.Label9)
         Me.Name = "Trivia"
         Me.Text = "Trivia"
         Me.GroupBox1.ResumeLayout(False)
@@ -295,4 +308,5 @@ Partial Class Trivia
     Friend WithEvents Label8 As Label
     Friend WithEvents Binserir As Button
     Friend WithEvents BLimpar As Button
+    Friend WithEvents Label9 As Label
 End Class

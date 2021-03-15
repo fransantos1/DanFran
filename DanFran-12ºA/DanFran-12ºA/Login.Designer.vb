@@ -36,7 +36,7 @@ Partial Class Login
         Me.Blogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Blogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Blogin.Font = New System.Drawing.Font("Cooper Black", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Blogin.Location = New System.Drawing.Point(15, 226)
+        Me.Blogin.Location = New System.Drawing.Point(12, 168)
         Me.Blogin.Name = "Blogin"
         Me.Blogin.Size = New System.Drawing.Size(75, 23)
         Me.Blogin.TabIndex = 0
@@ -48,7 +48,7 @@ Partial Class Login
         Me.Bclose.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Bclose.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Bclose.Font = New System.Drawing.Font("Cooper Black", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bclose.Location = New System.Drawing.Point(124, 226)
+        Me.Bclose.Location = New System.Drawing.Point(121, 168)
         Me.Bclose.Name = "Bclose"
         Me.Bclose.Size = New System.Drawing.Size(75, 23)
         Me.Bclose.TabIndex = 1
@@ -57,7 +57,7 @@ Partial Class Login
         '
         'TextBoxUser
         '
-        Me.TextBoxUser.Location = New System.Drawing.Point(12, 97)
+        Me.TextBoxUser.Location = New System.Drawing.Point(12, 68)
         Me.TextBoxUser.Name = "TextBoxUser"
         Me.TextBoxUser.Size = New System.Drawing.Size(184, 20)
         Me.TextBoxUser.TabIndex = 2
@@ -67,7 +67,7 @@ Partial Class Login
         Me.Lbluser.AutoSize = True
         Me.Lbluser.BackColor = System.Drawing.Color.Transparent
         Me.Lbluser.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbluser.Location = New System.Drawing.Point(12, 67)
+        Me.Lbluser.Location = New System.Drawing.Point(9, 47)
         Me.Lbluser.Name = "Lbluser"
         Me.Lbluser.Size = New System.Drawing.Size(80, 18)
         Me.Lbluser.TabIndex = 3
@@ -78,7 +78,7 @@ Partial Class Login
         Me.Lblpass.AutoSize = True
         Me.Lblpass.BackColor = System.Drawing.Color.Transparent
         Me.Lblpass.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lblpass.Location = New System.Drawing.Point(12, 131)
+        Me.Lblpass.Location = New System.Drawing.Point(9, 121)
         Me.Lblpass.Name = "Lblpass"
         Me.Lblpass.Size = New System.Drawing.Size(80, 18)
         Me.Lblpass.TabIndex = 4
@@ -86,7 +86,7 @@ Partial Class Login
         '
         'TextBoxPass
         '
-        Me.TextBoxPass.Location = New System.Drawing.Point(15, 162)
+        Me.TextBoxPass.Location = New System.Drawing.Point(12, 142)
         Me.TextBoxPass.Name = "TextBoxPass"
         Me.TextBoxPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxPass.Size = New System.Drawing.Size(184, 20)
@@ -99,7 +99,7 @@ Partial Class Login
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.windows
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(402, 261)
+        Me.ClientSize = New System.Drawing.Size(427, 238)
         Me.Controls.Add(Me.TextBoxPass)
         Me.Controls.Add(Me.Lblpass)
         Me.Controls.Add(Me.Lbluser)
@@ -108,6 +108,7 @@ Partial Class Login
         Me.Controls.Add(Me.Blogin)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -21,6 +21,7 @@
                 If String.ReferenceEquals(resultado, String.Empty) Then
                 ElseIf num1 + num2 = resultado Then
                     MsgBox("Conseguiste :DD", MsgBoxStyle.Information, "Parabéns")
+                    gamprogress.Increment(25)
                     mathgame = False
                 Else
                     MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
@@ -32,6 +33,7 @@
                 If String.ReferenceEquals(resultado, String.Empty) Then
                 ElseIf num1 - num2 = resultado Then
                     MsgBox("Conseguiste :DD", MsgBoxStyle.Information, "Parabéns")
+                    gamprogress.Increment(25)
                     mathgame = False
                 Else
                     MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
@@ -102,7 +104,10 @@
             start = True
 
         End If
-
+        'quando se faz as tasks todas
+        If gamprogress.Value = 100 Then
+            MsgBox("Acabaste as tarefas, vai falar com o Gajo™ para progredires!!", MsgBoxStyle.Information, "YEY!!!")
+        End If
         If start = True Then
             'colisões com escola
             If Collisions(character, lblescola) = True And
@@ -117,7 +122,8 @@
                 esquerda = False
             End If
             'colisões com biblioteca
-            If Collisions(character, lblbiblio) = True Then
+            If Collisions(character, lblbiblio) = True And
+                trivia2 = True Then
                 Me.Hide()
                 Trivia.Show()
                 character.Top = 264
@@ -128,16 +134,15 @@
                 esquerda = False
             End If
             'colisões com lab
-            If Collisions(character, lbllab) = True Then
-                If mathgame = True Then
-                    character.Top = 264
-                    character.Left = 554
-                    cima = False
-                    baixo = False
-                    direita = False
-                    esquerda = False
-                    lab()
-                End If
+            If Collisions(character, lbllab) = True And
+                 mathgame = True Then
+                character.Top = 264
+                character.Left = 554
+                cima = False
+                baixo = False
+                direita = False
+                esquerda = False
+                lab()
             End If
             'colisões com arcade
             If Collisions(character, lblrcade) = True And
@@ -162,29 +167,34 @@
     End Sub
     'lab
     Private Sub LabToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LabToolStripMenuItem.Click
-        lab()
+        If gamprogress.Value = 100 Then
+            lab()
+        End If
     End Sub
     'arcade
     Private Sub ArcadeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArcadeToolStripMenuItem.Click
-        Me.Hide()
-        Pok_Man.Show()
+        If gamprogress.Value = 100 Then
+            Me.Hide()
+            Pok_Man.Show()
+        End If
     End Sub
     'biblioteca
     Private Sub BibliotecaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BibliotecaToolStripMenuItem.Click
-        Me.Hide()
-        Trivia.Show()
+        If gamprogress.Value = 100 Then
+            Me.Hide()
+            Trivia.Show()
+        End If
     End Sub
     'escolas
     Private Sub EscolaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EscolaToolStripMenuItem.Click
-        If puzzle3 = False Then
+        If gamprogress.Value = 100 Then
             Me.Hide()
             Puzzle.Show()
+
         End If
     End Sub
 
-    Private Sub character_Click(sender As Object, e As EventArgs) Handles character.Click
+    Private Sub lblescola_Click(sender As Object, e As EventArgs) Handles lblescola.Click
 
     End Sub
-
-
 End Class

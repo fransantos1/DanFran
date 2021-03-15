@@ -146,7 +146,7 @@ Partial Class Regras
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PaleTurquoise
-        Me.ClientSize = New System.Drawing.Size(460, 317)
+        Me.ClientSize = New System.Drawing.Size(468, 327)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)

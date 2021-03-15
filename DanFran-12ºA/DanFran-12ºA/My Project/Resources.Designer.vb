@@ -83,9 +83,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property finishedsdonecutscenegifstar() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("finishedsdonecutscenegifstar", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property mapadef() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("mapadef", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property message() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("message", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
