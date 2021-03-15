@@ -112,9 +112,12 @@ Partial Class Mundo3
         Me.Label90 = New System.Windows.Forms.Label()
         Me.Label91 = New System.Windows.Forms.Label()
         Me.Label92 = New System.Windows.Forms.Label()
-        Me.Label93 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PBExit = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBExit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -818,7 +821,7 @@ Partial Class Mundo3
         Me.Label90.BackColor = System.Drawing.Color.Tan
         Me.Label90.Location = New System.Drawing.Point(648, 9)
         Me.Label90.Name = "Label90"
-        Me.Label90.Size = New System.Drawing.Size(10, 421)
+        Me.Label90.Size = New System.Drawing.Size(10, 360)
         Me.Label90.TabIndex = 89
         '
         'Label91
@@ -832,18 +835,10 @@ Partial Class Mundo3
         'Label92
         '
         Me.Label92.BackColor = System.Drawing.Color.Tan
-        Me.Label92.Location = New System.Drawing.Point(3, 117)
+        Me.Label92.Location = New System.Drawing.Point(3, 9)
         Me.Label92.Name = "Label92"
-        Me.Label92.Size = New System.Drawing.Size(10, 420)
+        Me.Label92.Size = New System.Drawing.Size(10, 528)
         Me.Label92.TabIndex = 91
-        '
-        'Label93
-        '
-        Me.Label93.BackColor = System.Drawing.Color.Tan
-        Me.Label93.Location = New System.Drawing.Point(3, 9)
-        Me.Label93.Name = "Label93"
-        Me.Label93.Size = New System.Drawing.Size(10, 78)
-        Me.Label93.TabIndex = 92
         '
         'PictureBox1
         '
@@ -857,14 +852,37 @@ Partial Class Mundo3
         Me.PictureBox1.TabIndex = 93
         Me.PictureBox1.TabStop = False
         '
+        'PBExit
+        '
+        Me.PBExit.BackColor = System.Drawing.Color.White
+        Me.PBExit.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources._exit
+        Me.PBExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PBExit.Location = New System.Drawing.Point(629, 379)
+        Me.PBExit.Name = "PBExit"
+        Me.PBExit.Size = New System.Drawing.Size(26, 76)
+        Me.PBExit.TabIndex = 94
+        Me.PBExit.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PictureBox2.Image = Global.DanFran_12ºA.My.Resources.Resources.minotaurcloseup
+        Me.PictureBox2.Location = New System.Drawing.Point(451, 192)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(204, 214)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 95
+        Me.PictureBox2.TabStop = False
+        '
         'Mundo3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(659, 538)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PBExit)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label93)
         Me.Controls.Add(Me.Label92)
         Me.Controls.Add(Me.Label91)
         Me.Controls.Add(Me.Label90)
@@ -958,6 +976,8 @@ Partial Class Mundo3
         Me.Name = "Mundo3"
         Me.Text = "Mundo3"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBExit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1052,6 +1072,7 @@ Partial Class Mundo3
     Friend WithEvents Label90 As Label
     Friend WithEvents Label91 As Label
     Friend WithEvents Label92 As Label
-    Friend WithEvents Label93 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PBExit As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

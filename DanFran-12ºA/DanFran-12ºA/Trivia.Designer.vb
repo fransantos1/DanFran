@@ -41,7 +41,9 @@ Partial Class Trivia
         Me.Binserir = New System.Windows.Forms.Button()
         Me.BLimpar = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'CBvila
@@ -49,7 +51,7 @@ Partial Class Trivia
         Me.CBvila.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.CBvila.Font = New System.Drawing.Font("Corbel", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBvila.FormattingEnabled = True
-        Me.CBvila.Location = New System.Drawing.Point(803, 173)
+        Me.CBvila.Location = New System.Drawing.Point(32, 84)
         Me.CBvila.Name = "CBvila"
         Me.CBvila.Size = New System.Drawing.Size(237, 31)
         Me.CBvila.TabIndex = 0
@@ -115,7 +117,7 @@ Partial Class Trivia
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Corbel", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(798, 132)
+        Me.Label1.Location = New System.Drawing.Point(27, 28)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(242, 26)
         Me.Label1.TabIndex = 4
@@ -258,6 +260,16 @@ Partial Class Trivia
         Me.Label9.TabIndex = 16
         Me.Label9.Text = "(não obrigatório)"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.CBvila)
+        Me.Panel1.Location = New System.Drawing.Point(767, 119)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(295, 208)
+        Me.Panel1.TabIndex = 17
+        '
         'Trivia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -265,6 +277,7 @@ Partial Class Trivia
         Me.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.triviabg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1115, 416)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.BLimpar)
         Me.Controls.Add(Me.Binserir)
         Me.Controls.Add(Me.Label8)
@@ -276,15 +289,15 @@ Partial Class Trivia
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtnomes)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ListBNomes)
-        Me.Controls.Add(Me.CBvila)
         Me.Controls.Add(Me.Label9)
         Me.Name = "Trivia"
         Me.Text = "Trivia"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -309,4 +322,5 @@ Partial Class Trivia
     Friend WithEvents Binserir As Button
     Friend WithEvents BLimpar As Button
     Friend WithEvents Label9 As Label
+    Friend WithEvents Panel1 As Panel
 End Class

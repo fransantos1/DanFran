@@ -26,6 +26,7 @@ Partial Class Main
         Me.BJogar = New System.Windows.Forms.Button()
         Me.Bregras = New System.Windows.Forms.Button()
         Me.BSair = New System.Windows.Forms.Button()
+        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.SuspendLayout()
         '
         'Label1
@@ -33,9 +34,9 @@ Partial Class Main
         Me.Label1.BackColor = System.Drawing.Color.RosyBrown
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(-16, 216)
+        Me.Label1.Location = New System.Drawing.Point(2, 258)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(629, 111)
+        Me.Label1.Size = New System.Drawing.Size(789, 119)
         Me.Label1.TabIndex = 0
         '
         'BJogar
@@ -43,7 +44,7 @@ Partial Class Main
         Me.BJogar.BackColor = System.Drawing.Color.MistyRose
         Me.BJogar.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BJogar.Font = New System.Drawing.Font("Gadugi", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BJogar.Location = New System.Drawing.Point(434, 230)
+        Me.BJogar.Location = New System.Drawing.Point(627, 282)
         Me.BJogar.Name = "BJogar"
         Me.BJogar.Size = New System.Drawing.Size(151, 72)
         Me.BJogar.TabIndex = 1
@@ -55,7 +56,7 @@ Partial Class Main
         Me.Bregras.BackColor = System.Drawing.Color.MistyRose
         Me.Bregras.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Bregras.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bregras.Location = New System.Drawing.Point(319, 259)
+        Me.Bregras.Location = New System.Drawing.Point(512, 311)
         Me.Bregras.Name = "Bregras"
         Me.Bregras.Size = New System.Drawing.Size(109, 43)
         Me.Bregras.TabIndex = 2
@@ -67,18 +68,26 @@ Partial Class Main
         Me.BSair.BackColor = System.Drawing.Color.MistyRose
         Me.BSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BSair.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BSair.Location = New System.Drawing.Point(12, 265)
+        Me.BSair.Location = New System.Drawing.Point(12, 317)
         Me.BSair.Name = "BSair"
         Me.BSair.Size = New System.Drawing.Size(109, 37)
         Me.BSair.TabIndex = 3
         Me.BSair.Text = "Sair"
         Me.BSair.UseVisualStyleBackColor = False
         '
+        'MonthCalendar1
+        '
+        Me.MonthCalendar1.Location = New System.Drawing.Point(12, 18)
+        Me.MonthCalendar1.Name = "MonthCalendar1"
+        Me.MonthCalendar1.TabIndex = 4
+        Me.MonthCalendar1.TitleBackColor = System.Drawing.Color.LightSeaGreen
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(597, 314)
+        Me.ClientSize = New System.Drawing.Size(790, 377)
+        Me.Controls.Add(Me.MonthCalendar1)
         Me.Controls.Add(Me.BSair)
         Me.Controls.Add(Me.Bregras)
         Me.Controls.Add(Me.BJogar)
@@ -94,4 +103,5 @@ Partial Class Main
     Friend WithEvents BJogar As Button
     Friend WithEvents Bregras As Button
     Friend WithEvents BSair As Button
+    Friend WithEvents MonthCalendar1 As MonthCalendar
 End Class

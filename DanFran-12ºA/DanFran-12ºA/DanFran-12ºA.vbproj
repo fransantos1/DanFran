@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fim.Designer.vb">
+      <DependentUpon>Fim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fim.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mundo3.Designer.vb">
       <DependentUpon>Mundo3.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     <Compile Include="variaveis.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Fim.resx">
+      <DependentUpon>Fim.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mundo3.resx">
       <DependentUpon>Mundo3.vb</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +268,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\antagonistcloseup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coracaomorto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coracaovivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minotaurcloseup.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
