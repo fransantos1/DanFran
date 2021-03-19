@@ -13,7 +13,7 @@
         ElseIf TextBoxUser.Text = "" Then
             MsgBox("Por favor introduza um Username", MsgBoxStyle.Information, "Erro")
         Else
-            MsgBox("O valor que introduzio está errado", MsgBoxStyle.Information, "Erro")
+            MsgBox("O valor que introduziu está errado", MsgBoxStyle.Information, "Erro")
         End If
     End Sub
 
@@ -21,4 +21,7 @@
         End
     End Sub
 
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

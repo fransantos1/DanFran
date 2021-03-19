@@ -37,6 +37,16 @@ DanFran-12ºA
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.CaixaFalasMau">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DanFran_12ºA.My.Resources.Resources.CaixaFalasMinotauro">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DanFran_12ºA.My.Resources.Resources.Character">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

@@ -52,6 +52,8 @@
         character.BackColor = Color.Transparent
         Ticks.Start()
         puzzle2 = True
+        lblfala.BackColor = Color.Thistle
+        PicFala.BackColor = Color.Transparent
     End Sub
     'boolean de movimentos
     Private Sub Mundo2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -109,17 +111,22 @@
                 lblfala.Text = "Olá, eu sou Mário, Belzebu Mário. É um prazer. Reparei que o senhor não é de cá, bem vindo a patopolis! Como uma prenda de boas vindas, podia me fazer um favor? Podia?! Obrigado. Só tenho umas tarefas para fazer nestes edifícios aqui, como maneira de pagar as minhas dívidas... Volte quando as tiver feito todas e dar-lhe-ei uma recompensa..."
                 picbad.Visible = True
                 lblfala.Visible = True
+                PicFala.Visible = True
             ElseIf (0 < gamprogress.Value < 100) Then
                 lblfala.Text = "Ainda não acabaste tudo, volta quando tiveres feito o que te pedi!"
                 lblfala.Visible = True
+                picbad.Visible = True
+                PicFala.Visible = True
             ElseIf gamprogress.Value = 100 Then
                 lblfala.Text = "Ah, conseguiste! Obrigado a sério, senhor. Agora o ritual está completo, finalmente consegui fazer alguém pagar as minhas dívidas! Finalmente domino o mundo! E a tua recompensa... Para que não me tentes derrubar, irei prender te no labirinto do Minotauro. Xau xau"
                 picbad.Visible = True
                 lblfala.Visible = True
+                PicFala.Visible = True
             End If
         Else
             picbad.Visible = False
             lblfala.Visible = False
+            PicFala.Visible = False
         End If
 
 

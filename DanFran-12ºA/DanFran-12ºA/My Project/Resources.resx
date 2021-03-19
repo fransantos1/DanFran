@@ -196,4 +196,10 @@
   <data name="gameicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gameicon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CaixaFalasMau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CaixaFalasMau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CaixaFalasMinotauro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CaixaFalasMinotauro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

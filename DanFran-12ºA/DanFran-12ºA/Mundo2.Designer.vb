@@ -44,12 +44,14 @@ Partial Class Mundo2
         Me.mau = New System.Windows.Forms.PictureBox()
         Me.lblfala = New System.Windows.Forms.Label()
         Me.picbad = New System.Windows.Forms.PictureBox()
+        Me.PicFala = New System.Windows.Forms.PictureBox()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Bordertopleft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.borderdownright, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menustrip.SuspendLayout()
         CType(Me.mau, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picbad, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PicFala, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbllab
@@ -186,10 +188,11 @@ Partial Class Mundo2
         '
         'lblfala
         '
+        Me.lblfala.BackColor = System.Drawing.Color.Thistle
         Me.lblfala.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblfala.Location = New System.Drawing.Point(0, 301)
+        Me.lblfala.Location = New System.Drawing.Point(40, 324)
         Me.lblfala.Name = "lblfala"
-        Me.lblfala.Size = New System.Drawing.Size(1143, 135)
+        Me.lblfala.Size = New System.Drawing.Size(1062, 101)
         Me.lblfala.TabIndex = 10
         Me.lblfala.Visible = False
         '
@@ -204,6 +207,17 @@ Partial Class Mundo2
         Me.picbad.TabStop = False
         Me.picbad.Visible = False
         '
+        'PicFala
+        '
+        Me.PicFala.BackColor = System.Drawing.SystemColors.Control
+        Me.PicFala.Image = Global.DanFran_12ºA.My.Resources.Resources.CaixaFalasMau
+        Me.PicFala.Location = New System.Drawing.Point(2, 311)
+        Me.PicFala.Name = "PicFala"
+        Me.PicFala.Size = New System.Drawing.Size(1141, 121)
+        Me.PicFala.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PicFala.TabIndex = 12
+        Me.PicFala.TabStop = False
+        '
         'Mundo2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -212,6 +226,7 @@ Partial Class Mundo2
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1143, 434)
         Me.Controls.Add(Me.lblfala)
+        Me.Controls.Add(Me.PicFala)
         Me.Controls.Add(Me.gamprogress)
         Me.Controls.Add(Me.borderdownright)
         Me.Controls.Add(Me.Bordertopleft)
@@ -235,6 +250,7 @@ Partial Class Mundo2
         Me.Menustrip.PerformLayout()
         CType(Me.mau, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picbad, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PicFala, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -260,4 +276,5 @@ Partial Class Mundo2
     Friend WithEvents mau As PictureBox
     Friend WithEvents lblfala As Label
     Friend WithEvents picbad As PictureBox
+    Friend WithEvents PicFala As PictureBox
 End Class
