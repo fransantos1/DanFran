@@ -117,9 +117,11 @@ Partial Class Mundo3
         Me.PBExit = New System.Windows.Forms.PictureBox()
         Me.picmino = New System.Windows.Forms.PictureBox()
         Me.lblmino = New System.Windows.Forms.Label()
+        Me.PicFala = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBExit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picmino, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PicFala, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -869,9 +871,9 @@ Partial Class Mundo3
         '
         Me.picmino.BackColor = System.Drawing.Color.WhiteSmoke
         Me.picmino.Image = Global.DanFran_12ºA.My.Resources.Resources.minotaurcloseup
-        Me.picmino.Location = New System.Drawing.Point(454, 190)
+        Me.picmino.Location = New System.Drawing.Point(423, 153)
         Me.picmino.Name = "picmino"
-        Me.picmino.Size = New System.Drawing.Size(204, 214)
+        Me.picmino.Size = New System.Drawing.Size(232, 240)
         Me.picmino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picmino.TabIndex = 95
         Me.picmino.TabStop = False
@@ -879,11 +881,23 @@ Partial Class Mundo3
         '
         'lblmino
         '
-        Me.lblmino.Location = New System.Drawing.Point(3, 391)
+        Me.lblmino.BackColor = System.Drawing.Color.Tan
+        Me.lblmino.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmino.Location = New System.Drawing.Point(21, 414)
         Me.lblmino.Name = "lblmino"
-        Me.lblmino.Size = New System.Drawing.Size(655, 148)
+        Me.lblmino.Size = New System.Drawing.Size(611, 109)
         Me.lblmino.TabIndex = 96
         Me.lblmino.Visible = False
+        '
+        'PicFala
+        '
+        Me.PicFala.Image = Global.DanFran_12ºA.My.Resources.Resources.CaixaFalasMinotauro2
+        Me.PicFala.Location = New System.Drawing.Point(6, 391)
+        Me.PicFala.Name = "PicFala"
+        Me.PicFala.Size = New System.Drawing.Size(649, 147)
+        Me.PicFala.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PicFala.TabIndex = 97
+        Me.PicFala.TabStop = False
         '
         'Mundo3
         '
@@ -891,8 +905,9 @@ Partial Class Mundo3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(659, 538)
-        Me.Controls.Add(Me.lblmino)
         Me.Controls.Add(Me.picmino)
+        Me.Controls.Add(Me.lblmino)
+        Me.Controls.Add(Me.PicFala)
         Me.Controls.Add(Me.PBExit)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label92)
@@ -991,6 +1006,7 @@ Partial Class Mundo3
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBExit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picmino, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PicFala, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1089,4 +1105,5 @@ Partial Class Mundo3
     Friend WithEvents PBExit As PictureBox
     Friend WithEvents picmino As PictureBox
     Friend WithEvents lblmino As Label
+    Friend WithEvents PicFala As PictureBox
 End Class

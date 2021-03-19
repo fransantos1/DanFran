@@ -202,4 +202,13 @@
   <data name="CaixaFalasMinotauro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CaixaFalasMinotauro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CaixaFalasMau2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CaixaFalasMau2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CaixaFalasMinotauro2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CaixaFalasMinotauro2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="protagonist_idlefront" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\protagonist_idlefront.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -103,9 +103,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property CaixaFalasMau2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CaixaFalasMau2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property CaixaFalasMinotauro() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("CaixaFalasMinotauro", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property CaixaFalasMinotauro2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CaixaFalasMinotauro2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -257,6 +277,16 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("pokmancherry2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''</summary>
+        Friend ReadOnly Property protagonist_idlefront() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("protagonist_idlefront", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
             End Get
         End Property
         

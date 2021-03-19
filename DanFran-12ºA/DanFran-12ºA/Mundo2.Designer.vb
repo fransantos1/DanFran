@@ -199,9 +199,9 @@ Partial Class Mundo2
         'picbad
         '
         Me.picbad.Image = Global.DanFran_12ºA.My.Resources.Resources.antagonistcloseup
-        Me.picbad.Location = New System.Drawing.Point(941, 151)
+        Me.picbad.Location = New System.Drawing.Point(892, 95)
         Me.picbad.Name = "picbad"
-        Me.picbad.Size = New System.Drawing.Size(202, 158)
+        Me.picbad.Size = New System.Drawing.Size(251, 214)
         Me.picbad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picbad.TabIndex = 11
         Me.picbad.TabStop = False
@@ -210,7 +210,7 @@ Partial Class Mundo2
         'PicFala
         '
         Me.PicFala.BackColor = System.Drawing.SystemColors.Control
-        Me.PicFala.Image = Global.DanFran_12ºA.My.Resources.Resources.CaixaFalasMau
+        Me.PicFala.Image = Global.DanFran_12ºA.My.Resources.Resources.CaixaFalasMau2
         Me.PicFala.Location = New System.Drawing.Point(2, 311)
         Me.PicFala.Name = "PicFala"
         Me.PicFala.Size = New System.Drawing.Size(1141, 121)
@@ -225,6 +225,7 @@ Partial Class Mundo2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1143, 434)
+        Me.Controls.Add(Me.picbad)
         Me.Controls.Add(Me.lblfala)
         Me.Controls.Add(Me.PicFala)
         Me.Controls.Add(Me.gamprogress)
@@ -237,7 +238,6 @@ Partial Class Mundo2
         Me.Controls.Add(Me.lbllab)
         Me.Controls.Add(Me.Menustrip)
         Me.Controls.Add(Me.mau)
-        Me.Controls.Add(Me.picbad)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.Menustrip

@@ -73,27 +73,27 @@ Partial Class Regras
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(32, 210)
+        Me.Label3.Location = New System.Drawing.Point(32, 208)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(410, 17)
+        Me.Label3.Size = New System.Drawing.Size(350, 17)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "No minijogo Pok-Man, usa o rato para atravessares o labirinto"
+        Me.Label3.Text = "No minijogo Pok-Man e no Mundo 2, usa o rato para"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(32, 227)
+        Me.Label4.Location = New System.Drawing.Point(32, 225)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(164, 17)
+        Me.Label4.Size = New System.Drawing.Size(390, 17)
         Me.Label4.TabIndex = 4
-        Me.Label4.Text = "até chegares às cerejas."
+        Me.Label4.Text = "atravessares o labirinto até chegares às cerejas ou à saída."
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(32, 152)
+        Me.Label5.Location = New System.Drawing.Point(32, 156)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(394, 17)
         Me.Label5.TabIndex = 5
@@ -103,7 +103,7 @@ Partial Class Regras
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(32, 169)
+        Me.Label6.Location = New System.Drawing.Point(32, 174)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(88, 17)
         Me.Label6.TabIndex = 6
@@ -136,7 +136,7 @@ Partial Class Regras
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Wingdings", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Label9.Location = New System.Drawing.Point(11, 209)
+        Me.Label9.Location = New System.Drawing.Point(12, 204)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(25, 21)
         Me.Label9.TabIndex = 9
