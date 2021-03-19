@@ -51,6 +51,7 @@
         character.BackColor = Color.Transparent
         Ticks.Start()
         puzzle2 = True
+        Panel1.Visible = False
     End Sub
     'boolean de movimentos
     Private Sub Mundo2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -101,10 +102,35 @@
             character.Left = character.Left + 5
         End If
 
-        If Collisions(mau, character) Then
+        'conversa com mau
+        If Collisions(mau, character) And gamprogress.Value = 0 Then
 
             start = True
+            Panel1.Visible = True
+            LblConversa.Text = "Olá, eu sou Mário, Belzebu Mário. É um prazer. Reparei que o senhor não é de cá, bem vindo a patopolis! Como uma prenda de boas vindas, podia me fazer um favor? Podia?! Obrigado. Só tenho umas tarefas para fazer nestes edifícios aqui, como maneira de pagar as minhas dívidas... Volte quando as tiver feito todas e dar-lhe-ei uma recompensa..."
+            ButtonOK.Visible = True
+            ButtonMundo3.Visible = False
             badpic.Visible = True
+            character.Top = 264
+            character.Left = 554
+
+        ElseIf Collisions(mau, character) And (0 < gamprogress.Value < 100) Then
+            Panel1.Visible = True
+            LblConversa.Text = "Ainda não fizeste tudo, volta quando acabares o que te pedi."
+            ButtonOK.Visible = True
+            ButtonMundo3.Visible = False
+            badpic.Visible = True
+            character.Top = 264
+            character.Left = 554
+
+        ElseIf Collisions(mau, character) And gamprogress.Value = 100 Then
+            Panel1.Visible = True
+            LblConversa.Text = "Ah, conseguiste! Obrigado a sério, senhor. Agora o ritual está completo, finalmente consegui fazer alguém pagar as minhas dívidas! Finalmente domino o mundo! E a tua recompensa... Para que não me tentes derrubar, irei prender te no labirinto do Minotauro. Xau xau!"
+            ButtonMundo3.Visible = True
+            badpic.Visible = True
+            character.Top = 264
+            character.Left = 554
+
         End If
 
         'quando se faz as tasks todas
@@ -197,9 +223,14 @@
         End If
     End Sub
 
-    Private Sub lblescola_Click(sender As Object, e As EventArgs) Handles lblescola.Click
+    Private Sub ButtonOK_Click(sender As Object, e As EventArgs) Handles ButtonOK.Click
+        Panel1.Visible = False
 
     End Sub
 
+    Private Sub ButtonMundo3_Click(sender As Object, e As EventArgs) Handles ButtonMundo3.Click
+        Me.Hide()
+        Mundo3.Show()
 
+    End Sub
 End Class

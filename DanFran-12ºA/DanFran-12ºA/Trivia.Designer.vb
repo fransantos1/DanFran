@@ -22,6 +22,7 @@ Partial Class Trivia
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Trivia))
         Me.CBvila = New System.Windows.Forms.ComboBox()
         Me.ListBNomes = New System.Windows.Forms.ListBox()
         Me.Chk1 = New System.Windows.Forms.CheckBox()
@@ -292,6 +293,7 @@ Partial Class Trivia
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ListBNomes)
         Me.Controls.Add(Me.Label9)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Trivia"
         Me.Text = "Trivia"
         Me.GroupBox1.ResumeLayout(False)

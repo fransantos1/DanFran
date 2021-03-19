@@ -22,6 +22,7 @@ Partial Class Puzzle
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Puzzle))
         Me.RBA = New System.Windows.Forms.RadioButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.RBB = New System.Windows.Forms.RadioButton()
@@ -145,6 +146,7 @@ Partial Class Puzzle
         Me.Controls.Add(Me.RBB)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.RBA)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Puzzle"
         Me.Text = "Puzzle"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
