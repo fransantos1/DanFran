@@ -4,6 +4,7 @@
     Dim esquerda As Boolean = False
     Dim direita As Boolean = False
     Dim start As Boolean = False
+    Dim plsnaorepetir As Boolean = True
 
     'funçao lab
     Private Function lab()
@@ -112,7 +113,7 @@
                 picbad.Visible = True
                 lblfala.Visible = True
                 PicFala.Visible = True
-            ElseIf (0 < gamprogress.Value < 100) Then
+            ElseIf (gamprogress.Value > 0 And gamprogress.Value < 100) Then
                 lblfala.Text = "Ainda não acabaste tudo, volta quando tiveres feito o que te pedi!"
                 lblfala.Visible = True
                 picbad.Visible = True
@@ -131,7 +132,8 @@
 
 
         'quando se faz as tasks todas
-        If gamprogress.Value = 100 Then
+        If gamprogress.Value = 100 And plsnaorepetir = True Then
+            plsnaorepetir = False
             MsgBox("Acabaste as tarefas, vai falar com o Gajo™ para progredires!!", MsgBoxStyle.Information, "YEY!!!")
         End If
         If start = True Then

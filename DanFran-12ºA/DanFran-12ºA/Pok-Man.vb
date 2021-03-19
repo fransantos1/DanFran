@@ -10,6 +10,7 @@
     End Sub
 
     Private Sub Button1_MouseHover(sender As Object, e As EventArgs) Handles Button1.MouseHover
+        Mundo2.gamprogress.Increment(25)
         MsgBox("Conseguiste!! :D", MsgBoxStyle.Information, "Parabéns")
         Me.Hide()
         Mundo2.Show()
