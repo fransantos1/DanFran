@@ -42,13 +42,13 @@ Partial Class Mundo2
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.gamprogress = New System.Windows.Forms.ProgressBar()
         Me.mau = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.badpic = New System.Windows.Forms.PictureBox()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Bordertopleft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.borderdownright, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menustrip.SuspendLayout()
         CType(Me.mau, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.badpic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbllab
@@ -183,16 +183,17 @@ Partial Class Mundo2
         Me.mau.TabIndex = 9
         Me.mau.TabStop = False
         '
-        'PictureBox1
+        'badpic
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.DanFran_12ºA.My.Resources.Resources.antagonistcloseup
-        Me.PictureBox1.Location = New System.Drawing.Point(926, 132)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(205, 186)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
+        Me.badpic.BackColor = System.Drawing.Color.Transparent
+        Me.badpic.Image = Global.DanFran_12ºA.My.Resources.Resources.antagonistcloseup
+        Me.badpic.Location = New System.Drawing.Point(926, 132)
+        Me.badpic.Name = "badpic"
+        Me.badpic.Size = New System.Drawing.Size(205, 186)
+        Me.badpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.badpic.TabIndex = 10
+        Me.badpic.TabStop = False
+        Me.badpic.Visible = False
         '
         'Mundo2
         '
@@ -201,7 +202,7 @@ Partial Class Mundo2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1143, 434)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.badpic)
         Me.Controls.Add(Me.gamprogress)
         Me.Controls.Add(Me.borderdownright)
         Me.Controls.Add(Me.Bordertopleft)
@@ -222,7 +223,7 @@ Partial Class Mundo2
         Me.Menustrip.ResumeLayout(False)
         Me.Menustrip.PerformLayout()
         CType(Me.mau, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.badpic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -246,5 +247,5 @@ Partial Class Mundo2
     Friend WithEvents EscolaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents gamprogress As ProgressBar
     Friend WithEvents mau As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents badpic As PictureBox
 End Class

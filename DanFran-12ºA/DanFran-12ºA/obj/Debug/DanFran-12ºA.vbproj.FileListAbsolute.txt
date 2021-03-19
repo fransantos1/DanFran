@@ -28,7 +28,6 @@ D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFr
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.vbprojResolveAssemblyReference.cache
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Pok_Man.resources
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Puzzle.resources
-D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Game.resources
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Login.resources
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Main.resources
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Mundo2.resources
@@ -52,3 +51,4 @@ C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\D
 C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Trivia.resources
 C:\Users\Daniela\Documents\Joguinho AI\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran-12ºA.vbproj.GenerateResource.Cache
 D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Mundo3.resources
+D:\ai\visual basic\jogo final\DanFran\Dan-Fran-12ºA\DanFran\DanFran-12ºA\DanFran-12ºA\obj\Debug\DanFran_12ºA.Fim.resources

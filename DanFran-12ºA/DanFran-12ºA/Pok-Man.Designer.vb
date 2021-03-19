@@ -43,11 +43,9 @@ Partial Class Pok_Man
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.pok = New System.Windows.Forms.PictureBox()
         Me.ticks = New System.Windows.Forms.Timer(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pok, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -231,15 +229,6 @@ Partial Class Pok_Man
         Me.PictureBox1.TabIndex = 22
         Me.PictureBox1.TabStop = False
         '
-        'pok
-        '
-        Me.pok.BackColor = System.Drawing.Color.Gold
-        Me.pok.Location = New System.Drawing.Point(112, 190)
-        Me.pok.Name = "pok"
-        Me.pok.Size = New System.Drawing.Size(16, 16)
-        Me.pok.TabIndex = 23
-        Me.pok.TabStop = False
-        '
         'ticks
         '
         Me.ticks.Interval = 10
@@ -264,7 +253,6 @@ Partial Class Pok_Man
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(468, 502)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.pok)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.Label19)
@@ -288,7 +276,6 @@ Partial Class Pok_Man
         Me.Name = "Pok_Man"
         Me.Text = "Pok_Man"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pok, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -312,7 +299,6 @@ Partial Class Pok_Man
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents pok As PictureBox
     Friend WithEvents ticks As Timer
     Friend WithEvents Button1 As Button
 End Class

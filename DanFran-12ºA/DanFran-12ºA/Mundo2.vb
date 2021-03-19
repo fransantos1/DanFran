@@ -100,10 +100,13 @@
         If direita = True Then
             character.Left = character.Left + 5
         End If
-        If Collisions(mau, character) Then
-            start = True
 
+        If Collisions(mau, character) Then
+
+            start = True
+            badpic.Visible = True
         End If
+
         'quando se faz as tasks todas
         If gamprogress.Value = 100 Then
             MsgBox("Acabaste as tarefas, vai falar com o Gajo™ para progredires!!", MsgBoxStyle.Information, "YEY!!!")
@@ -197,4 +200,6 @@
     Private Sub lblescola_Click(sender As Object, e As EventArgs) Handles lblescola.Click
 
     End Sub
+
+
 End Class
