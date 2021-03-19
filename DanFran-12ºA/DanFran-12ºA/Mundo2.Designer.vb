@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Mundo2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Mundo2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Mundo2))
@@ -42,18 +42,14 @@ Partial Class Mundo2
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.gamprogress = New System.Windows.Forms.ProgressBar()
         Me.mau = New System.Windows.Forms.PictureBox()
-        Me.badpic = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.LblConversa = New System.Windows.Forms.Label()
-        Me.ButtonOK = New System.Windows.Forms.Button()
-        Me.ButtonMundo3 = New System.Windows.Forms.Button()
+        Me.lblfala = New System.Windows.Forms.Label()
+        Me.picbad = New System.Windows.Forms.PictureBox()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Bordertopleft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.borderdownright, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menustrip.SuspendLayout()
         CType(Me.mau, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.badpic, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
+        CType(Me.picbad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbllab
@@ -188,56 +184,25 @@ Partial Class Mundo2
         Me.mau.TabIndex = 9
         Me.mau.TabStop = False
         '
-        'badpic
+        'lblfala
         '
-        Me.badpic.BackColor = System.Drawing.Color.Transparent
-        Me.badpic.Image = Global.DanFran_12ºA.My.Resources.Resources.antagonistcloseup
-        Me.badpic.Location = New System.Drawing.Point(914, 3)
-        Me.badpic.Name = "badpic"
-        Me.badpic.Size = New System.Drawing.Size(205, 186)
-        Me.badpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.badpic.TabIndex = 10
-        Me.badpic.TabStop = False
-        Me.badpic.Visible = False
+        Me.lblfala.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblfala.Location = New System.Drawing.Point(0, 301)
+        Me.lblfala.Name = "lblfala"
+        Me.lblfala.Size = New System.Drawing.Size(1143, 135)
+        Me.lblfala.TabIndex = 10
+        Me.lblfala.Visible = False
         '
-        'Panel1
+        'picbad
         '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.ButtonMundo3)
-        Me.Panel1.Controls.Add(Me.ButtonOK)
-        Me.Panel1.Controls.Add(Me.LblConversa)
-        Me.Panel1.Controls.Add(Me.badpic)
-        Me.Panel1.Location = New System.Drawing.Point(12, 127)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1119, 295)
-        Me.Panel1.TabIndex = 11
-        '
-        'LblConversa
-        '
-        Me.LblConversa.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.LblConversa.Location = New System.Drawing.Point(3, 199)
-        Me.LblConversa.Name = "LblConversa"
-        Me.LblConversa.Size = New System.Drawing.Size(1113, 89)
-        Me.LblConversa.TabIndex = 11
-        Me.LblConversa.Text = "Label1"
-        '
-        'ButtonOK
-        '
-        Me.ButtonOK.Location = New System.Drawing.Point(819, 239)
-        Me.ButtonOK.Name = "ButtonOK"
-        Me.ButtonOK.Size = New System.Drawing.Size(67, 33)
-        Me.ButtonOK.TabIndex = 12
-        Me.ButtonOK.Text = "ok"
-        Me.ButtonOK.UseVisualStyleBackColor = True
-        '
-        'ButtonMundo3
-        '
-        Me.ButtonMundo3.Location = New System.Drawing.Point(641, 243)
-        Me.ButtonMundo3.Name = "ButtonMundo3"
-        Me.ButtonMundo3.Size = New System.Drawing.Size(72, 29)
-        Me.ButtonMundo3.TabIndex = 13
-        Me.ButtonMundo3.Text = "vais"
-        Me.ButtonMundo3.UseVisualStyleBackColor = True
+        Me.picbad.Image = Global.DanFran_12ºA.My.Resources.Resources.antagonistcloseup
+        Me.picbad.Location = New System.Drawing.Point(941, 151)
+        Me.picbad.Name = "picbad"
+        Me.picbad.Size = New System.Drawing.Size(202, 158)
+        Me.picbad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picbad.TabIndex = 11
+        Me.picbad.TabStop = False
+        Me.picbad.Visible = False
         '
         'Mundo2
         '
@@ -246,7 +211,7 @@ Partial Class Mundo2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1143, 434)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.lblfala)
         Me.Controls.Add(Me.gamprogress)
         Me.Controls.Add(Me.borderdownright)
         Me.Controls.Add(Me.Bordertopleft)
@@ -257,6 +222,7 @@ Partial Class Mundo2
         Me.Controls.Add(Me.lbllab)
         Me.Controls.Add(Me.Menustrip)
         Me.Controls.Add(Me.mau)
+        Me.Controls.Add(Me.picbad)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.Menustrip
@@ -268,8 +234,7 @@ Partial Class Mundo2
         Me.Menustrip.ResumeLayout(False)
         Me.Menustrip.PerformLayout()
         CType(Me.mau, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.badpic, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
+        CType(Me.picbad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -293,9 +258,6 @@ Partial Class Mundo2
     Friend WithEvents EscolaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents gamprogress As ProgressBar
     Friend WithEvents mau As PictureBox
-    Friend WithEvents badpic As PictureBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents LblConversa As Label
-    Friend WithEvents ButtonOK As Button
-    Friend WithEvents ButtonMundo3 As Button
+    Friend WithEvents lblfala As Label
+    Friend WithEvents picbad As PictureBox
 End Class
