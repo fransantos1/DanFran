@@ -45,6 +45,7 @@ Partial Class Mundo2
         Me.lblfala = New System.Windows.Forms.Label()
         Me.picbad = New System.Windows.Forms.PictureBox()
         Me.PicFala = New System.Windows.Forms.PictureBox()
+        Me.LblAvancar = New System.Windows.Forms.Label()
         CType(Me.character, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Bordertopleft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.borderdownright, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -218,6 +219,18 @@ Partial Class Mundo2
         Me.PicFala.TabIndex = 12
         Me.PicFala.TabStop = False
         '
+        'LblAvancar
+        '
+        Me.LblAvancar.BackColor = System.Drawing.Color.HotPink
+        Me.LblAvancar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LblAvancar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblAvancar.Location = New System.Drawing.Point(953, 382)
+        Me.LblAvancar.Name = "LblAvancar"
+        Me.LblAvancar.Size = New System.Drawing.Size(164, 40)
+        Me.LblAvancar.TabIndex = 13
+        Me.LblAvancar.Text = "Ir para o Labirinto do Minotauro"
+        Me.LblAvancar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Mundo2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -225,6 +238,7 @@ Partial Class Mundo2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1143, 434)
+        Me.Controls.Add(Me.LblAvancar)
         Me.Controls.Add(Me.picbad)
         Me.Controls.Add(Me.lblfala)
         Me.Controls.Add(Me.PicFala)
@@ -277,4 +291,5 @@ Partial Class Mundo2
     Friend WithEvents lblfala As Label
     Friend WithEvents picbad As PictureBox
     Friend WithEvents PicFala As PictureBox
+    Friend WithEvents LblAvancar As Label
 End Class

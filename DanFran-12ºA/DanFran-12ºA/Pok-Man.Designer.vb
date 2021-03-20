@@ -46,22 +46,24 @@ Partial Class Pok_Man
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ticks = New System.Windows.Forms.Timer(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.Blue
-        Me.Label2.Location = New System.Drawing.Point(223, 132)
+        Me.Label2.Location = New System.Drawing.Point(217, 17)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(21, 188)
+        Me.Label2.Size = New System.Drawing.Size(21, 171)
         Me.Label2.TabIndex = 1
         Me.Label2.Tag = ""
         '
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.Blue
-        Me.Label3.Location = New System.Drawing.Point(444, 121)
+        Me.Label3.Location = New System.Drawing.Point(438, 3)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(21, 372)
         Me.Label3.TabIndex = 2
@@ -70,7 +72,7 @@ Partial Class Pok_Man
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.Blue
-        Me.Label4.Location = New System.Drawing.Point(366, 199)
+        Me.Label4.Location = New System.Drawing.Point(360, 67)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(21, 195)
         Me.Label4.TabIndex = 3
@@ -79,7 +81,7 @@ Partial Class Pok_Man
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.Blue
-        Me.Label5.Location = New System.Drawing.Point(223, 394)
+        Me.Label5.Location = New System.Drawing.Point(217, 262)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(21, 99)
         Me.Label5.TabIndex = 4
@@ -88,7 +90,7 @@ Partial Class Pok_Man
         'Label6
         '
         Me.Label6.BackColor = System.Drawing.Color.Blue
-        Me.Label6.Location = New System.Drawing.Point(148, 320)
+        Me.Label6.Location = New System.Drawing.Point(142, 188)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(21, 61)
         Me.Label6.TabIndex = 5
@@ -97,7 +99,7 @@ Partial Class Pok_Man
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.Blue
-        Me.Label7.Location = New System.Drawing.Point(148, 190)
+        Me.Label7.Location = New System.Drawing.Point(142, 58)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(21, 65)
         Me.Label7.TabIndex = 6
@@ -106,7 +108,7 @@ Partial Class Pok_Man
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.Color.Blue
-        Me.Label8.Location = New System.Drawing.Point(3, 121)
+        Me.Label8.Location = New System.Drawing.Point(6, 3)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(21, 372)
         Me.Label8.TabIndex = 7
@@ -115,7 +117,7 @@ Partial Class Pok_Man
         'Label9
         '
         Me.Label9.BackColor = System.Drawing.Color.Blue
-        Me.Label9.Location = New System.Drawing.Point(70, 309)
+        Me.Label9.Location = New System.Drawing.Point(64, 177)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(21, 137)
         Me.Label9.TabIndex = 8
@@ -124,7 +126,7 @@ Partial Class Pok_Man
         'Label10
         '
         Me.Label10.BackColor = System.Drawing.Color.Blue
-        Me.Label10.Location = New System.Drawing.Point(12, 121)
+        Me.Label10.Location = New System.Drawing.Point(25, 3)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(434, 22)
         Me.Label10.TabIndex = 9
@@ -133,7 +135,7 @@ Partial Class Pok_Man
         'Label11
         '
         Me.Label11.BackColor = System.Drawing.Color.Blue
-        Me.Label11.Location = New System.Drawing.Point(12, 471)
+        Me.Label11.Location = New System.Drawing.Point(6, 350)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(453, 22)
         Me.Label11.TabIndex = 10
@@ -142,16 +144,16 @@ Partial Class Pok_Man
         'Label12
         '
         Me.Label12.BackColor = System.Drawing.Color.Blue
-        Me.Label12.Location = New System.Drawing.Point(3, 247)
+        Me.Label12.Location = New System.Drawing.Point(9, 123)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(166, 22)
+        Me.Label12.Size = New System.Drawing.Size(154, 22)
         Me.Label12.TabIndex = 11
         Me.Label12.Tag = ""
         '
         'Label13
         '
         Me.Label13.BackColor = System.Drawing.Color.Blue
-        Me.Label13.Location = New System.Drawing.Point(3, 184)
+        Me.Label13.Location = New System.Drawing.Point(6, 58)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(74, 22)
         Me.Label13.TabIndex = 12
@@ -160,7 +162,7 @@ Partial Class Pok_Man
         'Label14
         '
         Me.Label14.BackColor = System.Drawing.Color.Blue
-        Me.Label14.Location = New System.Drawing.Point(226, 257)
+        Me.Label14.Location = New System.Drawing.Point(220, 125)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(82, 22)
         Me.Label14.TabIndex = 13
@@ -169,7 +171,7 @@ Partial Class Pok_Man
         'Label15
         '
         Me.Label15.BackColor = System.Drawing.Color.Blue
-        Me.Label15.Location = New System.Drawing.Point(317, 190)
+        Me.Label15.Location = New System.Drawing.Point(311, 58)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(70, 22)
         Me.Label15.TabIndex = 14
@@ -178,7 +180,7 @@ Partial Class Pok_Man
         'Label16
         '
         Me.Label16.BackColor = System.Drawing.Color.Blue
-        Me.Label16.Location = New System.Drawing.Point(314, 320)
+        Me.Label16.Location = New System.Drawing.Point(308, 188)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(73, 22)
         Me.Label16.TabIndex = 15
@@ -187,7 +189,7 @@ Partial Class Pok_Man
         'Label17
         '
         Me.Label17.BackColor = System.Drawing.Color.Blue
-        Me.Label17.Location = New System.Drawing.Point(148, 320)
+        Me.Label17.Location = New System.Drawing.Point(142, 188)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(96, 22)
         Me.Label17.TabIndex = 16
@@ -196,7 +198,7 @@ Partial Class Pok_Man
         'Label18
         '
         Me.Label18.BackColor = System.Drawing.Color.Blue
-        Me.Label18.Location = New System.Drawing.Point(186, 433)
+        Me.Label18.Location = New System.Drawing.Point(180, 301)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(50, 22)
         Me.Label18.TabIndex = 17
@@ -205,16 +207,16 @@ Partial Class Pok_Man
         'Label19
         '
         Me.Label19.BackColor = System.Drawing.Color.Blue
-        Me.Label19.Location = New System.Drawing.Point(3, 424)
+        Me.Label19.Location = New System.Drawing.Point(6, 305)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(88, 22)
+        Me.Label19.Size = New System.Drawing.Size(79, 22)
         Me.Label19.TabIndex = 18
         Me.Label19.Tag = ""
         '
         'Label20
         '
         Me.Label20.BackColor = System.Drawing.Color.Blue
-        Me.Label20.Location = New System.Drawing.Point(226, 394)
+        Me.Label20.Location = New System.Drawing.Point(220, 262)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(161, 22)
         Me.Label20.TabIndex = 19
@@ -240,11 +242,38 @@ Partial Class Pok_Man
         Me.Button1.BackgroundImage = Global.DanFran_12ºA.My.Resources.Resources.pokmancherry2
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(259, 424)
+        Me.Button1.Location = New System.Drawing.Point(253, 292)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(49, 39)
         Me.Button1.TabIndex = 24
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Label19)
+        Me.Panel1.Controls.Add(Me.Label20)
+        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Controls.Add(Me.Label13)
+        Me.Panel1.Controls.Add(Me.Label18)
+        Me.Panel1.Controls.Add(Me.Label17)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.Label16)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.Label15)
+        Me.Panel1.Controls.Add(Me.Label14)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.Label9)
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Location = New System.Drawing.Point(6, 124)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(468, 372)
+        Me.Panel1.TabIndex = 25
         '
         'Pok_Man
         '
@@ -252,32 +281,14 @@ Partial Class Pok_Man
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(468, 502)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(472, 502)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Pok_Man"
         Me.Text = "Pok_Man"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -303,4 +314,5 @@ Partial Class Pok_Man
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ticks As Timer
     Friend WithEvents Button1 As Button
+    Friend WithEvents Panel1 As Panel
 End Class

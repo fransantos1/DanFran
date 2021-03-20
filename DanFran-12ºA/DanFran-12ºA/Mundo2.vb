@@ -55,6 +55,7 @@
         puzzle2 = True
         lblfala.BackColor = Color.Thistle
         PicFala.BackColor = Color.Transparent
+        LblAvancar.Visible = False
     End Sub
     'boolean de movimentos
     Private Sub Mundo2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -109,12 +110,12 @@
         If Collisions(mau, character) Then
             start = True
             If gamprogress.Value = 0 Then
-                lblfala.Text = "Olá, eu sou Mário, Belzebu Mário. É um prazer. Reparei que o senhor não é de cá, bem vindo a patopolis! Como uma prenda de boas vindas, podia me fazer um favor? Podia?! Obrigado. Só tenho umas tarefas para fazer nestes edifícios aqui, como maneira de pagar as minhas dívidas... Volte quando as tiver feito todas e dar-lhe-ei uma recompensa..."
+                lblfala.Text = "Olá, eu sou Mário, Belzebu Mário. É um prazer. Reparei que o senhor não é de cá, bem vindo a patopolis! Como uma prenda de boas vindas, podia me fazer um favor? Podia?! Obrigado. Só tenho umas tarefas para fazer nestes edifícios aqui, como maneira de pagar as minhas dívidas... Volte quando as tiver feito todas e dar-lhe-ei uma recompensa... (Afasta-te do Mário para deixares de ver esta fala)"
                 picbad.Visible = True
                 lblfala.Visible = True
                 PicFala.Visible = True
             ElseIf (gamprogress.Value > 0 And gamprogress.Value < 100) Then
-                lblfala.Text = "Ainda não acabaste tudo, volta quando tiveres feito o que te pedi!"
+                lblfala.Text = "Ainda não acabaste tudo, volta quando tiveres feito o que te pedi! (Afasta-te do Mário para deixares de ver esta fala)"
                 lblfala.Visible = True
                 picbad.Visible = True
                 PicFala.Visible = True
@@ -123,6 +124,7 @@
                 picbad.Visible = True
                 lblfala.Visible = True
                 PicFala.Visible = True
+                LblAvancar.Visible = True
             End If
         Else
             picbad.Visible = False
@@ -220,5 +222,10 @@
             Puzzle.Show()
 
         End If
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles LblAvancar.Click
+        Me.Hide()
+        Mundo3.Show()
     End Sub
 End Class
