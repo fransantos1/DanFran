@@ -1,231 +1,48 @@
 ﻿Public Class Mundo2
-    Dim baixo As Boolean = False
-    Dim cima As Boolean = False
-    Dim esquerda As Boolean = False
-    Dim direita As Boolean = False
-    Dim start As Boolean = False
-    Dim plsnaorepetir As Boolean = True
 
-    'funçao lab
-    Private Function lab()
-        Dim resultado As String
-        Dim num1 As Single
-        Dim num2 As Single
-        Dim num3 As Single
-        num3 = Int(Rnd() * 10)
-        num1 = Int(Rnd() * 10)
-        num2 = Int(Rnd() * 10)
+    Public Sub New()
 
-        Select Case num3
-            Case 1 To 5
-                resultado = InputBox("Quanto é que é: " & num1 & " + " & num2)
-                If String.ReferenceEquals(resultado, String.Empty) Then
-                ElseIf num1 + num2 = resultado Then
-                    MsgBox("Conseguiste :DD", MsgBoxStyle.Information, "Parabéns")
-                    gamprogress.Increment(25)
-                    mathgame = False
-                Else
-                    MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
-                    lab()
-                End If
+        ' This call is required by the designer.
+        InitializeComponent()
+        MoveToStart()
+        ' Add any initialization after the InitializeComponent() call.
 
-            Case 6 To 10
-                resultado = InputBox("Quanto é que é: " & num1 & " - " & num2)
-                If String.ReferenceEquals(resultado, String.Empty) Then
-                ElseIf num1 - num2 = resultado Then
-                    MsgBox("Conseguiste :DD", MsgBoxStyle.Information, "Parabéns")
-                    gamprogress.Increment(25)
-                    mathgame = False
-                Else
-                    MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
-                    lab()
-                End If
-        End Select
-        Return True
-    End Function
-    'Load form
-    Private Sub Mundo2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lbllab.BackColor = Color.Transparent
-        lblrcade.BackColor = Color.Transparent
-        lblescola.BackColor = Color.Transparent
-        lblbiblio.BackColor = Color.Transparent
-        picbad.BackColor = Color.Transparent
-        character.BackColor = Color.Transparent
-        Ticks.Start()
-        puzzle2 = True
-        lblfala.BackColor = Color.Thistle
+    End Sub
+    Private Sub Mundo3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        picmino.BackColor = Color.Transparent
         PicFala.BackColor = Color.Transparent
-        LblAvancar.Visible = False
+        Dim cur As Icon
+        cur = My.Resources.protagonist_idlefront
+        Me.Cursor = New Cursor(cur.Handle)
+        PicFala.Visible = False
     End Sub
-    'boolean de movimentos
-    Private Sub Mundo2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-        Select Case e.KeyValue
-            Case Keys.W
-                cima = True
-            Case Keys.S
-                baixo = True
-            Case Keys.D
-                direita = True
-            Case Keys.A
-                esquerda = True
-        End Select
+
+    Private Sub MoveToStart()
+        Dim StartingPoint = Panel1.Location
+        StartingPoint.Offset(295, 295)
+        Cursor.Position = PointToScreen(StartingPoint)
     End Sub
-    Private Sub Mundo2_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
-        Select Case e.KeyValue
-            Case Keys.W
-                cima = False
-            Case Keys.S
-                baixo = False
-            Case Keys.D
-                direita = False
-            Case Keys.A
-                esquerda = False
-        End Select
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        lblmino.Text = "AH! Quem és tu? De onde vens? Belzebu Mário... Dominar o mundo... Não sei do que falas, mas por favor não me faças mal! A saída é ali à direita, podes ir à vontade... Só não me faças mal! (Clica duas vezes no Minotauro para esconderes esta fala)"
+        picmino.Visible = True
+        lblmino.Visible = True
+        PicFala.Visible = True
     End Sub
 
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Ticks.Tick
-
-        'movimento
-        If cima = True Then
-            If character.Top > Bordertopleft.Top + Bordertopleft.Height Then
-                character.Top = character.Top - 5
-            End If
-        End If
-        If baixo = True Then
-            If character.Top + character.Height < borderdownright.Top Then
-                character.Top = character.Top + 5
-            End If
-        End If
-        If esquerda = True Then
-            If character.Left > Bordertopleft.Left + Bordertopleft.Width Then
-                character.Left = character.Left - 5
-            End If
-        End If
-        If direita = True Then
-            character.Left = character.Left + 5
-        End If
-
-        'conversa com mau
-        If Collisions(mau, character) Then
-            start = True
-            If gamprogress.Value = 0 Then
-                lblfala.Text = "Olá, eu sou Mário, Belzebu Mário. É um prazer. Reparei que o senhor não é de cá, bem vindo a patopolis! Como uma prenda de boas vindas, podia me fazer um favor? Podia?! Obrigado. Só tenho umas tarefas para fazer nestes edifícios aqui, como maneira de pagar as minhas dívidas... Volte quando as tiver feito todas e dar-lhe-ei uma recompensa... (Afasta-te do Mário para deixares de ver esta fala)"
-                picbad.Visible = True
-                lblfala.Visible = True
-                PicFala.Visible = True
-            ElseIf (gamprogress.Value > 0 And gamprogress.Value < 100) Then
-                lblfala.Text = "Ainda não acabaste tudo, volta quando tiveres feito o que te pedi! (Afasta-te do Mário para deixares de ver esta fala)"
-                lblfala.Visible = True
-                picbad.Visible = True
-                PicFala.Visible = True
-            ElseIf gamprogress.Value = 100 Then
-                lblfala.Text = "Ah, conseguiste! Obrigado a sério, senhor. Agora o ritual está completo, finalmente consegui fazer alguém pagar as minhas dívidas! Finalmente domino o mundo! E a tua recompensa... Para que não me tentes derrubar, irei prender te no labirinto do Minotauro. Xau xau"
-                picbad.Visible = True
-                lblfala.Visible = True
-                PicFala.Visible = True
-                LblAvancar.Visible = True
-            End If
-        Else
-            picbad.Visible = False
-            lblfala.Visible = False
-            PicFala.Visible = False
-        End If
-
-
-        'quando se faz as tasks todas
-        If gamprogress.Value = 100 And plsnaorepetir = True Then
-            plsnaorepetir = False
-            MsgBox("Acabaste as tarefas, vai falar com o Gajo™ para progredires!!", MsgBoxStyle.Information, "YEY!!!")
-        End If
-        If start = True Then
-            'colisões com escola
-            If Collisions(character, lblescola) = True And
-            puzzle2 = True Then
-                Me.Hide()
-                Puzzle.Show()
-                character.Top = 264
-                character.Left = 554
-                cima = False
-                baixo = False
-                direita = False
-                esquerda = False
-            End If
-            'colisões com biblioteca
-            If Collisions(character, lblbiblio) = True And
-                trivia2 = True Then
-                Me.Hide()
-                Trivia.Show()
-                character.Top = 264
-                character.Left = 554
-                cima = False
-                baixo = False
-                direita = False
-                esquerda = False
-            End If
-            'colisões com lab
-            If Collisions(character, lbllab) = True And
-                 mathgame = True Then
-                character.Top = 264
-                character.Left = 554
-                cima = False
-                baixo = False
-                direita = False
-                esquerda = False
-                lab()
-            End If
-            'colisões com arcade
-            If Collisions(character, lblrcade) = True And
-                pokman2 = True Then
-                pokman2 = False
-                cima = False
-                baixo = False
-                direita = False
-                esquerda = False
-                Me.Hide()
-                Pok_Man.Show()
-            End If
-        End If
-    End Sub
-    'menu strip
-    Private Sub SairToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairToolStripMenuItem.Click
-        End
-    End Sub
-    'autores
-    Private Sub AutoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AutoresToolStripMenuItem.Click
-        MsgBox("Francisco e Daniela", MsgBoxStyle.Information, "Autores")
-    End Sub
-    'lab
-    Private Sub LabToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LabToolStripMenuItem.Click
-        If gamprogress.Value = 100 Then
-            lab()
-        End If
-    End Sub
-    'arcade
-    Private Sub ArcadeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArcadeToolStripMenuItem.Click
-        If gamprogress.Value = 100 Then
-            Me.Hide()
-            Pok_Man.Show()
-        End If
-    End Sub
-    'biblioteca
-    Private Sub BibliotecaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BibliotecaToolStripMenuItem.Click
-        If gamprogress.Value = 100 Then
-            Me.Hide()
-            Trivia.Show()
-        End If
-    End Sub
-    'escolas
-    Private Sub EscolaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EscolaToolStripMenuItem.Click
-        If gamprogress.Value = 100 Then
-            Me.Hide()
-            Puzzle.Show()
-
-        End If
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles LblAvancar.Click
+    Private Sub PBExit_Click(sender As Object, e As EventArgs) Handles PBExit.Click
         Me.Hide()
-        Mundo3.Show()
+        Fim.Show()
+    End Sub
+
+    Private Sub Wall_MouseEnter(sender As Object, e As EventArgs) Handles Label11.MouseEnter, Label92.MouseEnter, Label91.MouseEnter, Label90.MouseEnter, Label9.MouseEnter, Label89.MouseEnter, Label88.MouseEnter, Label87.MouseEnter, Label86.MouseEnter, Label85.MouseEnter, Label84.MouseEnter, Label83.MouseEnter, Label82.MouseEnter, Label81.MouseEnter, Label80.MouseEnter, Label8.MouseEnter, Label79.MouseEnter, Label78.MouseEnter, Label77.MouseEnter, Label76.MouseEnter, Label75.MouseEnter, Label74.MouseEnter, Label73.MouseEnter, Label72.MouseEnter, Label71.MouseEnter, Label70.MouseEnter, Label7.MouseEnter, Label69.MouseEnter, Label68.MouseEnter, Label67.MouseEnter, Label66.MouseEnter, Label65.MouseEnter, Label64.MouseEnter, Label63.MouseEnter, Label62.MouseEnter, Label61.MouseEnter, Label60.MouseEnter, Label6.MouseEnter, Label59.MouseEnter, Label58.MouseEnter, Label57.MouseEnter, Label55.MouseEnter, Label54.MouseEnter, Label53.MouseEnter, Label52.MouseEnter, Label51.MouseEnter, Label50.MouseEnter, Label5.MouseEnter, Label49.MouseEnter, Label48.MouseEnter, Label47.MouseEnter, Label46.MouseEnter, Label45.MouseEnter, Label44.MouseEnter, Label43.MouseEnter, Label42.MouseEnter, Label41.MouseEnter, Label40.MouseEnter, Label4.MouseEnter, Label39.MouseEnter, Label38.MouseEnter, Label37.MouseEnter, Label36.MouseEnter, Label35.MouseEnter, Label34.MouseEnter, Label33.MouseEnter, Label32.MouseEnter, Label31.MouseEnter, Label30.MouseEnter, Label3.MouseEnter, Label29.MouseEnter, Label28.MouseEnter, Label27.MouseEnter, Label26.MouseEnter, Label25.MouseEnter, Label24.MouseEnter, Label23.MouseEnter, Label22.MouseEnter, Label21.MouseEnter, Label20.MouseEnter, Label2.MouseEnter, Label19.MouseEnter, Label18.MouseEnter, Label17.MouseEnter, Label16.MouseEnter, Label15.MouseEnter, Label14.MouseEnter, Label13.MouseEnter, Label12.MouseEnter, Label1.MouseEnter
+        MoveToStart()
+    End Sub
+
+    Private Sub PictureBox1_DoubleClick(sender As Object, e As EventArgs) Handles PictureBox1.DoubleClick
+        picmino.Visible = False
+        lblmino.Visible = False
+        PicFala.Visible = False
     End Sub
 End Class

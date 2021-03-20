@@ -3,9 +3,9 @@
         If RBD.Checked = True Then
             puzzle2 = False
             MsgBox("Conseguiste :DD", MsgBoxStyle.Information, "Parabéns")
-            Mundo2.gamprogress.Increment(25)
+            Mundo1.gamprogress.Increment(25)
             Me.Hide()
-            Mundo2.Show()
+            Mundo1.Show()
 
             puzzle3 = False
         Else

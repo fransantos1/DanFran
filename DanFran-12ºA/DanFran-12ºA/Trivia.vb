@@ -14,8 +14,8 @@
             MsgBox("Conseguiste! :DD", MsgBoxStyle.Information, "Parabéns")
             trivia2 = False
             Me.Hide()
-            Mundo2.Show()
-            Mundo2.gamprogress.Increment(25)
+            Mundo1.Show()
+            Mundo1.gamprogress.Increment(25)
         Else
             MsgBox("Tens algo errado...", MsgBoxStyle.Information, "Não conseguiste")
         End If
