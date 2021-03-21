@@ -11,4 +11,5 @@
     Private Sub Bregras_Click(sender As Object, e As EventArgs) Handles Bregras.Click
         Regras.Show()
     End Sub
+
 End Class

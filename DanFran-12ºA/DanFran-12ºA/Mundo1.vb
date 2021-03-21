@@ -5,7 +5,6 @@
     Dim direita As Boolean = False
     Dim start As Boolean = False
     Dim plsnaorepetir As Boolean = True
-
     'funçao lab
     Private Function lab()
         Dim resultado As String
@@ -82,8 +81,6 @@
                 esquerda = False
         End Select
     End Sub
-
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Ticks.Tick
 
         'movimento
