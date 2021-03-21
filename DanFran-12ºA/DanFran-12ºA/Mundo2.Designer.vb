@@ -884,7 +884,7 @@ Partial Class Mundo2
         'lblmino
         '
         Me.lblmino.BackColor = System.Drawing.Color.Tan
-        Me.lblmino.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblmino.Font = New System.Drawing.Font("Modern No. 20", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblmino.Location = New System.Drawing.Point(31, 410)
         Me.lblmino.Name = "lblmino"
         Me.lblmino.Size = New System.Drawing.Size(611, 109)
