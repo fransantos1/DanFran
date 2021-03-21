@@ -107,7 +107,7 @@
         If Collisions(mau, character) Then
             start = True
             If gamprogress.Value = 0 Then
-                lblfala.Text = "Olá, eu sou Mário, Belzebu Mário. É um prazer. Reparei que o senhor não é de cá, bem vindo a patopolis! Como uma prenda de boas vindas, podia me fazer um favor? Podia?! Obrigado. Só tenho umas tarefas para fazer nestes edifícios aqui, como maneira de pagar as minhas dívidas... Volte quando as tiver feito todas e dar-lhe-ei uma recompensa... (Afasta-te do Mário para deixares de ver esta fala)"
+                lblfala.Text = "Olá, eu sou Mário, Belzebu Mário. É um prazer. Reparei que o senhor não é de cá, bem vindo a Patópolis! Como uma prenda de boas vindas, podia me fazer um favor? Podia?! Obrigado. Só tenho umas tarefas para fazer nestes edifícios aqui, como maneira de pagar as minhas dívidas... Volte quando as tiver feito todas e dar-lhe-ei uma recompensa... (Afasta-te do Mário para deixares de ver esta fala)"
                 picbad.Visible = True
                 lblfala.Visible = True
                 PicFala.Visible = True
@@ -133,7 +133,7 @@
         'quando se faz as tasks todas
         If gamprogress.Value = 100 And plsnaorepetir = True Then
             plsnaorepetir = False
-            MsgBox("Acabaste as tarefas, vai falar com o Gajo™ para progredires!!", MsgBoxStyle.Information, "YEY!!!")
+            MsgBox("Acabaste as tarefas, vai falar com o Mário para progredires!!", MsgBoxStyle.Information, "YAY!!!")
         End If
         If start = True Then
             'colisões com escola

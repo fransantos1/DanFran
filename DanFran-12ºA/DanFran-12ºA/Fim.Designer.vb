@@ -37,7 +37,7 @@ Partial Class Fim
         Me.Button1.BackColor = System.Drawing.Color.PaleVioletRed
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Britannic Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(340, 253)
+        Me.Button1.Location = New System.Drawing.Point(369, 253)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(202, 73)
         Me.Button1.TabIndex = 0
@@ -92,9 +92,9 @@ Partial Class Fim
         Me.Label5.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(12, 196)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(525, 18)
+        Me.Label5.Size = New System.Drawing.Size(566, 18)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Estavas no teu carro, ainda à frente da floresta. Terá sido tudo um sonho?"
+        Me.Label5.Text = "Estavas deitado no teu sofá, à frente da tua televisão. Terá sido tudo um sonho?"
         '
         'Button2
         '
@@ -114,7 +114,7 @@ Partial Class Fim
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PeachPuff
-        Me.ClientSize = New System.Drawing.Size(572, 350)
+        Me.ClientSize = New System.Drawing.Size(583, 350)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
