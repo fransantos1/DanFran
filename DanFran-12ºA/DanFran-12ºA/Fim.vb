@@ -7,6 +7,4 @@
         Me.Hide()
         Main.Show()
     End Sub
-
-
 End Class

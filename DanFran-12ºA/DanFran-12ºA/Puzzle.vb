@@ -12,6 +12,4 @@
             MsgBox("Erraste :(", MsgBoxStyle.Information, "Não conseguiste")
         End If
     End Sub
-
-
 End Class

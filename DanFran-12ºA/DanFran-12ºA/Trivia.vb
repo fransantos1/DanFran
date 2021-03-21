@@ -6,7 +6,6 @@
         CBvila.Items.Add("Nova Patópolis")
         CBvila.Items.Add("Patópolis")
         CBvila.Items.Add("Velha Patópolis")
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -19,7 +18,6 @@
         Else
             MsgBox("Tens algo errado...", MsgBoxStyle.Information, "Não conseguiste")
         End If
-
     End Sub
 
     Private Sub Binserir_Click(sender As Object, e As EventArgs) Handles Binserir.Click
@@ -29,6 +27,4 @@
     Private Sub BLimpar_Click(sender As Object, e As EventArgs) Handles BLimpar.Click
         ListBNomes.Items.Clear()
     End Sub
-
-
 End Class

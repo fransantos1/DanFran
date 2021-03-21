@@ -20,8 +20,4 @@
     Private Sub Bclose_Click(sender As Object, e As EventArgs) Handles Bclose.Click
         End
     End Sub
-
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
