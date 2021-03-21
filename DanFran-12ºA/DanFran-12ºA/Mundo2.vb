@@ -14,20 +14,16 @@
         Dim cur As Icon
         cur = My.Resources.protagonist_idlefront
         Me.Cursor = New Cursor(cur.Handle)
-        PicFala.Visible = False
+        lblmino.Text = "AH! Quem és tu? De onde vens? Belzebu Mário... Dominar o mundo... Não sei do que falas, mas por favor não me faças mal! A saída é ali à direita, podes ir à vontade... Só não me faças mal! (Clica duas vezes no Minotauro para esconderes esta fala)"
+        picmino.Visible = True
+        lblmino.Visible = True
+        PicFala.Visible = True
     End Sub
 
     Private Sub MoveToStart()
         Dim StartingPoint = Panel1.Location
         StartingPoint.Offset(295, 295)
         Cursor.Position = PointToScreen(StartingPoint)
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        lblmino.Text = "AH! Quem és tu? De onde vens? Belzebu Mário... Dominar o mundo... Não sei do que falas, mas por favor não me faças mal! A saída é ali à direita, podes ir à vontade... Só não me faças mal! (Clica duas vezes no Minotauro para esconderes esta fala)"
-        picmino.Visible = True
-        lblmino.Visible = True
-        PicFala.Visible = True
     End Sub
 
 
